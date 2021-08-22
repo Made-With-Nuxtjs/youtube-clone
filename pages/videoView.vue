@@ -18,8 +18,7 @@
           I'm 1 column wide and I grow to take all the space
           I'm 1 column wide and I grow to take all the space
           I'm 1 column wide and I grow to take all the space
-          I'm 1 column wide and I grow to take all the space
-          I'm 1 column wide and I grow to take all the space
+         
         </v-card>
       </v-col>
       <v-col
