@@ -84,4 +84,5 @@ export default {
     },
   },
 }
+// help from https://vuetifyjs.com/en/components/autocompletes/#cryptocurrency-selector
 </script>
