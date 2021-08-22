@@ -51,10 +51,10 @@
       <v-btn icon>
         <v-icon>mdi-dialpad</v-icon>
       </v-btn>
-      <v-avatar>
+      <v-avatar size="36px">
         <img
-          class="logo"
-          src="https://cdn.vuetifyjs.com/images/john.jpg"
+          class="avatar"
+          src="https://randomuser.me/api/portraits/women/75.jpg"
           alt="John"
         />
       </v-avatar>
