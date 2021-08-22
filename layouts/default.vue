@@ -1,5 +1,5 @@
 <template>
-  <v-app >
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -8,40 +8,14 @@
       absulate
       left
       temporary
-
-     
     >
-     <!-- expand-on-hover -->
-
+      <!-- expand-on-hover -->
       <div class="d-flex">
-
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer"  class="ml-3 mt-3"/>
-        
-          <img
-          class="logo mt-4 ml-5"
-             src="~/assets/y222.png" 
-            alt="logo"
-          >
-       
-       
-        <!-- <v-badge
-        color="black"
-        text white
-          content="BD"
-          tile
-          class="mt-4"
-        > -->
-         <v-toolbar-title v-text="title" class="float-right mt-4 drawer-title"/>
-        <!-- </v-badge> -->
-      
-
-      
-
-
-       </div>
-       
-
-      <v-list >
+        <v-app-bar-nav-icon class="ml-3 mt-3" @click.stop="drawer = !drawer" />
+        <img class="logo mt-4 ml-5" src="/logo.png" alt="logo" />
+        <v-toolbar-title class="float-right mt-4 drawer-title" v-text="title" />
+      </div>
+      <v-list>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -58,89 +32,46 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-    <v-app-bar-nav-icon @click.stop="drawer = !drawer" ml-2 />
-      
-          <img class="logo ml-3"
-             src="~/assets/y222.png" 
-            alt="logo"           
-          >
-
-      <v-toolbar-title v-text="title"/>
-     
-      
-        <v-text-field class="input"
-      
-            v-model="search"
-            append-icon="mdi-magnify"
-            label="Search..."
-            type="text"
-            outlined
-            dense
-            clearable
-            
-          >
-          
-          </v-text-field>
-          <v-btn
-        icon
-      >
-        <v-icon>mdi-microphone</v-icon>        
-      </v-btn>
-     
+    <v-app-bar :clipped-left="clipped" fixed app>
+      <v-app-bar-nav-icon ml-2 @click.stop="drawer = !drawer" />
+      <img class="logo ml-3" src="/logo.png" alt="logo" />
+      <v-toolbar-title v-text="title" />
       <v-spacer />
-     
-      <v-btn
-        icon
-      >
-        <v-icon>mdi-video</v-icon>        
+      <Search />
+      <v-btn icon>
+        <v-icon>mdi-microphone</v-icon>
       </v-btn>
-      
-      <v-btn
-        icon
-      >
-        <v-icon>mdi-bell</v-icon>        
+      <v-spacer />
+      <v-btn icon>
+        <v-icon>mdi-video</v-icon>
       </v-btn>
-
-      <v-btn
-        icon
-      >
-        <v-icon>mdi-dialpad</v-icon>       
+      <v-btn icon>
+        <v-icon>mdi-bell</v-icon>
       </v-btn>
-       <v-avatar>
-      <img class="logo"
-        src="https://cdn.vuetifyjs.com/images/john.jpg"
-        alt="John"
-      >
-    </v-avatar>
-     
+      <v-btn icon>
+        <v-icon>mdi-dialpad</v-icon>
+      </v-btn>
+      <v-avatar>
+        <img
+          class="logo"
+          src="https://cdn.vuetifyjs.com/images/john.jpg"
+          alt="John"
+        />
+      </v-avatar>
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
-     
     </v-main>
-     
-    
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
+    <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
-
 <script>
-
 export default {
-  
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
@@ -149,44 +80,44 @@ export default {
         {
           icon: 'mdi-home',
           title: 'Home',
-          to: '/'
+          to: '/',
         },
         {
           icon: 'mdi-home',
           title: 'Explore',
-          to: '/inspire'
+          to: '/inspire',
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Subcriptions',
-          to: '/inspire'
+          to: '/inspire',
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'Library',
-          to: '/inspire'
+          to: '/inspire',
         },
         {
           icon: 'mdi-chart-bubble',
           title: 'History',
-          to: '/inspire'
-        }
+          to: '/inspire',
+        },
       ],
       miniVariant: false,
       right: true,
-      title: 'Youtube'
+      title: 'Youtube',
     }
-  }
+  },
 }
 </script>
 
 <style scoped>
-.input{
+.input {
   margin-left: 18%;
   margin-top: 30px;
-  width:10px;
+  width: 10px;
 }
-img.logo{
+img.logo {
   height: 28px;
   width: 29px;
   margin-right: 2px;
@@ -194,7 +125,9 @@ img.logo{
 .theme--dark.v-application {
   color: rgb(30 29 30);
 }
-.drawer-title{color: white;}
+.drawer-title {
+  color: white;
+}
 </style>
 
 
