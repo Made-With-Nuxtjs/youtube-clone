@@ -1,6 +1,7 @@
 <template>
 <v-container dense>
-  <v-layout row  
+  <v-layout row  cols="12" 
+  class="justify-center"
    >
     <div  v-for="n in 10" :key="n">
        <v-col 
@@ -59,8 +60,11 @@
         </nuxt-link>
 
         <div>
-          <v-row dense no-gutters>
-             <v-col md="2" lg="2" sm="2">
+          <v-row >
+            
+             <v-col
+              cols="12" 
+               md="2" lg="2" sm="2">
                 <v-avatar 
                  class="float-sm-left ma-2"
                  size="34">
@@ -73,12 +77,17 @@
             <v-col md="10" lg="10" sm="10">
                 <v-icon class="float-sm-right">mdi-dots-vertical</v-icon>
                 <nuxt-link to="/videoView"   class="text-decoration-none">
-                    <h3> Nuxt JS beginner tutorial</h3>
-                </nuxt-link>
-                <div class="text-subtitle-1 pa-0 my-0">
-                  <nuxt-link to="/videoView" class="text-decoration-none">Programming with Oxf</nuxt-link>
-                </div>
-                <div class="">
+                    <h4 class="pt-2"> Nuxt JS beginner tutorial</h4>
+                <span class="text-subtitle-1 pa-0 ma-0">
+                The Net Ninja 
+                  <v-btn 
+                  icon
+                  >
+                      <v-icon>mdi-check-circle</v-icon>
+                  </v-btn>
+                </span>
+                 </nuxt-link>
+                <div >
                     <div class="text-subtitle-2 d-inline"> 1 M view</div>
                     <div class="text-subtitle-2 d-inline">. 1 week ago</div>
                 </div>

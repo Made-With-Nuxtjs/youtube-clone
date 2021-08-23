@@ -1,20 +1,20 @@
 <template>
-  <v-container class="grey lighten-5">
+  <v-container dark>
     <v-row
-      no-gutters
-      
+      no-gutters 
+      dense 
     >
       <!-- style="flex-wrap: nowrap;" -->
       <v-col
+       cols="12"
         md="8" lg="8" sm="12" xs="12"
-        style="min-width: 100px; max-width: 100%;"
         class="flex-grow-1 flex-shrink-0"
       >
           <!-- <v-card
              class="mx-auto" 
           > -->
           <v-responsive :aspect-ratio="16/9">
-            <v-container fluid>
+            <!-- <v-container fluid> -->
               <v-row dense>
                 <v-col
                   v-for="card in cards"
@@ -58,7 +58,7 @@
                   </v-card>
                 </v-col>
               </v-row>
-            </v-container>
+            <!-- </v-container> -->
             </v-responsive>
           <!-- </v-card> -->
 
@@ -66,9 +66,10 @@
 
       </v-col>
       <v-col
+      cols="12"
       md="4" lg="4" sm="12" xs="12"
         style="min-width: 100px;"
-        class="flex-grow-0 flex-shrink-1"
+        class="flex-grow-0 flex-shrink-1 pl-3"
       >
         <CategoryChips/>
         <v-card
@@ -77,8 +78,16 @@
           tile
         >
 
-          I'm 5 column wide and I shrink if there's not enough space I'm 1 column wide and I grow to take
-           all the space I'm 1 column wide and I grow to take all the space I'm 1 column wide and I grow to take all the space
+      <v-row>
+        <v-col md="6" lg="6" sm="6">
+         I'm 5 column wide and I shrink if there's not enough space I'm 1 column wide and I grow to take
+      </v-col>
+        <v-col md="6" lg="6" sm="6">
+         all the space I'm 1 column wide and I grow to take all the space I'm 1 column wide and I grow to take all the space
+      </v-col>
+      </v-row>
+         
+          
         </v-card>
       </v-col>
     </v-row>
