@@ -1,6 +1,6 @@
 <template>
 <v-container dense>
-    <v-layout row  
+  <v-layout row  
    >
     <div  v-for="n in 10" :key="n">
        <v-col 

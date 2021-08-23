@@ -1,46 +1,64 @@
 <template>
-
-  <!-- <v-container > -->
-    <flex-row dense
-    class="overflow-hidden"
-    absolute
-      color="indigo darken-2"
-      dark
-      shrink-on-scroll
-      prominent
-      scroll-target="#scrolling-techniques"
+  <v-row >
+    <v-col
+      cols="12"
+      sm="12"
+      md="12"
     >
-         <v-responsive>
-            <div class="text-center">
-                <v-chip
-                class="ma-2 " 
-                col="12"
-                >
-                All
-                </v-chip>
-                <v-chip
-                class="ma-2"
-                v-for="n in 19" :key="n"
-                >
-                Default
-                </v-chip>
-                
-            </div>
-     </v-responsive>
-    </flex-row>
-  <!-- </v-container> -->
-  
+      <v-sheet
+        elevation="10"
+        class="py-4 px-1"
+      >
+        <v-chip-group
+          multiple
+          active-class="primary--text"
+        >
+          <v-chip
+            v-for="tag in tags"
+            :key="tag"
+          >
+            {{ tag }}
+          </v-chip>
+        </v-chip-group>
+      </v-sheet>
+    </v-col>
+  </v-row>
 </template>
+
 <script>
-export default{
-     data(){
-    return {
-         
-           
-          
-      }
+  export default {
+    data: () => ({
+      tags: [
+        'All',
+        'Work',
+        'Home Improvement',
+        'Vacation',
+        'Food',
+        'Drawers',
+        'Shopping',
+        'Art',
+        'Tech',
+        'Creative Writing',
+        'Food',
+        'Drawers',
+        'Shopping',
+        'Art',
+        'Work',
+        'Home Improvement',
+        'Vacation',
+        'Food',
+        'Drawers',
+        'Shopping',
+        'Art',
+        'Tech',
+        'Creative Writing',
+        'Food',
+        'Drawers',
+        'Shopping',
+        'Art',
+      ],
+    }),
   }
-}
 </script>
 
 
