@@ -13,7 +13,7 @@
         tile
         class="pa-0"
       >
-        <nuxt-link to="/videoView">
+        <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
         <v-img
           height="250"
           src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
@@ -58,41 +58,34 @@
           </v-app-bar>
         </v-img>
         </nuxt-link>
-
         <div>
-          <v-row >
-            
+          <v-row>
              <v-col
               cols="12" 
                md="2" lg="2" sm="2">
                 <v-avatar 
-                 class="float-sm-left ma-2"
-                 size="34">
+                 class="float-left ma-2"
+                 size="32">
                   <img
                     src="https://randomuser.me/api/portraits/women/75.jpg"
-                    alt="John"
+                    alt="Nirob"
                   />
                 </v-avatar>
-            </v-col> 
-            <v-col md="10" lg="10" sm="10">
-                <v-icon class="float-sm-right">mdi-dots-vertical</v-icon>
-                <nuxt-link to="/videoView"   class="text-decoration-none">
-                    <h4 class="pt-2"> Nuxt JS beginner tutorial</h4>
-                <span class="text-subtitle-1 pa-0 ma-0">
-                The Net Ninja 
-                  <v-btn 
-                  icon
-                  >
-                      <v-icon>mdi-check-circle</v-icon>
-                  </v-btn>
-                </span>
-                 </nuxt-link>
-                <div >
-                    <div class="text-subtitle-2 d-inline"> 1 M view</div>
-                    <div class="text-subtitle-2 d-inline">. 1 week ago</div>
-                </div>
-            </v-col> 
-          </v-row>
+                </v-col> 
+                <v-col md="10" lg="10" sm="10" ma-0 pa-0>
+                    <v-icon class="float-right pt-3">mdi-dots-vertical</v-icon>
+                          <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
+                             <h3>Nuxt JS beginner tutorial </h3>
+                          </nuxt-link>
+                          <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
+                            <h5 class="#928E92--text">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></h5>  
+                          </nuxt-link>
+                        <div>
+                          <span class="text-subtitle-2 d-inline"> 1 M view</span>
+                          <span class="text-subtitle-2 d-inline">. 1 week ago</span>
+                      </div>
+              </v-col> 
+            </v-row>
           </div>
           </v-card>
           </v-col> 
