@@ -64,18 +64,18 @@
               cols="12" 
                md="2" lg="2" sm="2">
                 <v-avatar 
-                 class="float-left ma-2"
-                 size="32">
+                 class="float-left mt-3 pl-2"
+                 size="36">
                   <img
                     src="https://randomuser.me/api/portraits/women/75.jpg"
                     alt="Nirob"
                   />
                 </v-avatar>
                 </v-col> 
-                <v-col md="10" lg="10" sm="10">
-                    <v-icon class="float-right pt-3">mdi-dots-vertical</v-icon>
+                <v-col md="10" lg="10" sm="10" class="ma-0 pa-0 mt-3 mb-3">
+                    <v-icon class="float-right pt-4 pr-2">mdi-dots-vertical</v-icon>
                           <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
-                             <h4>Nuxt JS beginner tutorial </h4>
+                             <h4 class="mt-3">Nissan GTR Vs a Woman | Top Gear Festival Sydney.</h4>
                           </nuxt-link>
                           <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
                             <span style="font-weight: normal;" class="text-subtitle-2">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
