@@ -72,17 +72,17 @@
                   />
                 </v-avatar>
                 </v-col> 
-                <v-col md="10" lg="10" sm="10" ma-0 pa-0>
+                <v-col md="10" lg="10" sm="10">
                     <v-icon class="float-right pt-3">mdi-dots-vertical</v-icon>
                           <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
-                             <h3>Nuxt JS beginner tutorial </h3>
+                             <h4>Nuxt JS beginner tutorial </h4>
                           </nuxt-link>
                           <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
-                            <h5 class="#928E92--text">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></h5>  
+                            <span style="font-weight: normal;" class="text-subtitle-2">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
                           </nuxt-link>
                         <div>
-                          <span class="text-subtitle-2 d-inline"> 1 M view</span>
-                          <span class="text-subtitle-2 d-inline">. 1 week ago</span>
+                          <span style="font-weight: normal;" class="text-subtitle-2 d-inline"> 1 M view</span>
+                          <span style="font-weight: normal;" class="text-subtitle-2 d-inline">. 1 week ago</span>
                       </div>
               </v-col> 
             </v-row>
