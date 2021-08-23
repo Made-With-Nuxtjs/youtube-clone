@@ -5,7 +5,7 @@
       :mini-variant="miniVariant"
       :clipped="clipped"
       app
-      absulate
+      fixed
       left
       temporary
     >
