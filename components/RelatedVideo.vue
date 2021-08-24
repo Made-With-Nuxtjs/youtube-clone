@@ -5,48 +5,52 @@
    >
 
   <v-card
-    :loading="loading"
-    class="mx-auto"
+   v-for="n in 10" :key="n"
     max-width="600"
+    class="pb-2 cardColor"
   >
   <v-row>
-      <v-col md="6" sm="6" lg="6">
+      <v-col md="5" sm="5" lg="5">
         <div>
             <v-img
-             height="250"
-            src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+             height="94"
+             width="168"
+            src="https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg"
             ></v-img>
         </div>
     </v-col>
-    <v-col md="6" sm="6" lg="6">
-    <div>
-        <v-card-title>Cafe Badilico</v-card-title>
+    
+    <v-col md="7" sm="7" lg="7" dense>
+        <div>
+            <v-icon class="float-right pr-2 pt-1" size="16">mdi-dots-vertical</v-icon>
+             <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
+             <v-tooltip
+              bottom 
+              >
+                <template #activator="{ on, attrs }"> 
+                  <h4  style="font-weight: normal;" >
+                    <span
+                      class="d-block text-truncate"
+                      style="max-width: 255px;"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                    Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.
+                    </span>
+                  </h4>
+                </template>
+              <span>Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.</span>
+            </v-tooltip>
 
-    <v-card-text>
-      <v-row
-        align="center"
-        class="mx-0"
-      >
-        <v-rating
-          :value="4.5"
-          color="amber"
-          dense
-          half-increments
-          readonly
-          size="14"
-        ></v-rating>
 
-        <div class="grey--text ms-4">
-          4.5 (413)
-        </div>
-      </v-row>
-
-      <div class="my-4 text-subtitle-1">
-        $ • Italian, Cafe
-      </div>
-
-      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
-         </v-card-text>
+             </nuxt-link>
+             <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
+              <span class="text-subtitle-2 text-caption">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
+            </nuxt-link>
+            <div>
+              <span  class="text-subtitle-2 d-inline text-caption"> 1 M view</span>
+              <span class="text-subtitle-2 d-inline text-caption">. 1 week ago</span>
+            </div>
         </div>
     </v-col>
     </v-row> 
@@ -54,6 +58,16 @@
   </v-layout>
 </v-container>
 </template>
+
+
+
+<style scoped>
+
+.cardColor {
+   background-color: rgba(12, 9, 9, 0.5) !important;
+   border-color: white !important;
+ }
+</style>
 
 
 

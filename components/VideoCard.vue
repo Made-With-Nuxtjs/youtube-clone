@@ -5,13 +5,13 @@
    >
     <div  v-for="n in 10" :key="n">
        <v-col 
-       v-for="N in 4" :key="N"
+       v-for="v in 4" :key="v"
        >
       <v-card
         max-width="325"  
         flat 
         tile
-        class="pa-0"
+        class="pa-0 "
       >
         <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
         <v-img
@@ -78,11 +78,11 @@
                              <h4 class="mt-3">Nissan GTR Vs a Woman | Top Gear Festival Sydney.</h4>
                           </nuxt-link>
                           <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
-                            <span style="font-weight: normal;" class="text-subtitle-2">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
+                            <span class="text-subtitle-2 text-caption">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
                           </nuxt-link>
                         <div>
-                          <span style="font-weight: normal;" class="text-subtitle-2 d-inline"> 1 M view</span>
-                          <span style="font-weight: normal;" class="text-subtitle-2 d-inline">. 1 week ago</span>
+                          <span class="text-subtitle-2 d-inline text-caption"> 1 M view</span>
+                          <span class="text-subtitle-2 d-inline text-caption">. 1 week ago</span>
                       </div>
               </v-col> 
             </v-row>
@@ -93,6 +93,11 @@
   </v-layout>
   </v-container>
   </template>
+
+  
+
+
+
 
 
 

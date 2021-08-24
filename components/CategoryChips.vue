@@ -4,6 +4,7 @@
       cols="12"
       sm="12"
       md="12"
+      class="cardColor"
     >
       <v-sheet
         elevation="10"
@@ -60,9 +61,12 @@
 </script>
 
 
-
-
-
 <style scoped>
-
+#app {
+  background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(254,254,254,1) 100%);
+}
+.cardColor {
+   background-color: rgba(12, 9, 9, 0.5) !important;
+   border-color: white !important;
+ }
 </style>
