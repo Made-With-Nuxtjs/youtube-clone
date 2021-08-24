@@ -34,11 +34,18 @@
                         <v-icon>mdi-fast-forward</v-icon>
                       </v-btn>
                       <v-spacer></v-spacer>
+                     
+                      
                       <v-btn icon>
                         <v-icon>mdi-image-filter-none</v-icon>
                       </v-btn>
+
+                     
                       <v-btn icon>
                         <v-icon>mdi-checkbox-blank-outline</v-icon>
+                      </v-btn>
+                       <v-btn icon>
+                        <v-icon>mdi-rss-box</v-icon>
                       </v-btn>
                       <v-btn icon>
                         <v-icon>mdi-fullscreen</v-icon>
@@ -77,6 +84,16 @@
                     
                   </div>
                     <v-divider></v-divider>
+                    <div>
+                     <v-row>
+                       <v-col>
+                         
+                       </v-col>
+                       <v-col>
+
+                       </v-col>
+                     </v-row>
+                    </div>
                 </v-col>
               </v-row>
             </v-responsive>
