@@ -68,7 +68,7 @@
                  class="float-left  pa-2"
                  size="36">
                   <img
-                    src="https://randomuser.me/api/portraits/women/75.jpg"
+                    src="https://cdn.vuetifyjs.com/images/john.png"
                     alt="Nirob"
                   />
                 </v-avatar>

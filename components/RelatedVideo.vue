@@ -23,7 +23,7 @@
     <v-col md="7" sm="7" lg="7" dense>
         <div>
             <v-icon class="float-right pr-2 pt-1" size="16">mdi-dots-vertical</v-icon>
-             <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
+             <nuxt-link to="/videoView" class="linkStyle">
              <v-tooltip
               bottom 
               >
@@ -44,7 +44,8 @@
 
 
              </nuxt-link>
-             <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;">
+             <!-- <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;"> -->
+              <nuxt-link to="/profile" class="linkStyle">
               <span class="text-subtitle-2 text-caption">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
             </nuxt-link>
             <div>
@@ -67,6 +68,10 @@
    background-color: rgba(12, 9, 9, 0.5) !important;
    border-color: white !important;
  }
+ .linkStyle{
+  text-decoration: none;
+   color: white;
+}
 </style>
 
 
