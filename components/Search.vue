@@ -12,6 +12,7 @@
     item-value="symbol"
     label="Search ..."
     solo
+   class="rounded-pill"
   >
     <template #no-data>
       <v-list-item>

@@ -6,7 +6,10 @@
     >
       <v-col
        cols="12"
-        md="9" lg="9" sm="12" xs="12"
+      xs="12"
+      sm="12"
+      md="9" 
+      lg="9"
         class="flex-grow-1 flex-shrink-0"
       >
         <v-responsive :aspect-ratio="18/9">
@@ -19,11 +22,9 @@
                   <v-card>
                     <v-img
                       :src="card.src"
-                      gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                       height="600px"
-                    >
-                    </v-img>
-                    <v-card-actions>
+                    />
+                    <v-card-actions bottom>
                       <v-btn icon>
                         <v-icon>mdi-rewind</v-icon>
                       </v-btn>
@@ -34,13 +35,9 @@
                         <v-icon>mdi-fast-forward</v-icon>
                       </v-btn>
                       <v-spacer></v-spacer>
-                     
-                      
                       <v-btn icon>
                         <v-icon>mdi-image-filter-none</v-icon>
                       </v-btn>
-
-                     
                       <v-btn icon>
                         <v-icon>mdi-checkbox-blank-outline</v-icon>
                       </v-btn>
@@ -51,10 +48,12 @@
                         <v-icon>mdi-fullscreen</v-icon>
                       </v-btn>
                     </v-card-actions>
+                   
+
                   </v-card>
                    <div class="pt-3 white--text">
                     <nuxt-link to="/videoView" style="text-decoration: none; ">
-                        <span class="text-subtitle-2 text-caption ">#coding </v-icon></span> 
+                        <span class="text-subtitle-2 font-weight-light "># coding </span> 
                         </nuxt-link>
                     <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
                         <div
@@ -63,16 +62,15 @@
                           text-decoration: none;
                           font-size: 18px;
                           font-family:Robot, Arial, sans-serif;
-                          
                           "
                         >
                         Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus.
                         </div>
                     </nuxt-link>
                     
-                    <div class="pb-4">
-                      <span  class="text-subtitle-2 d-inline text-caption"> 1 M view</span>
-                      <span class="text-subtitle-2 d-inline text-caption">. 1 week ago</span>
+                    <div class="pb-4" >
+                      <span  class="text-subtitle-2 d-inline font-weight-thin"> 1 M view</span>
+                      <span class="text-subtitle-2 d-inline font-weight-thin">. 1 week ago</span>
                       <!-- right part -->
                       <v-icon class="float-right pr-2 pt-1" size="16">mdi-dots-horizontal</v-icon>
                       <v-btn class="float-right matchColor pa-0 mr-3"><v-icon class="pr-2" size="24">mdi-playlist-plus</v-icon>SAVE</v-btn>
@@ -80,27 +78,88 @@
                       <v-btn class="float-right matchColor pa-0"><v-icon class="pr-2" size="24">mdi-thumb-down </v-icon>0</v-btn>
                       <v-btn class="float-right matchColor pa-0"><v-icon class="pr-2" size="24">mdi-thumb-up</v-icon>3</v-btn>
                     </div>
-                        <!-- <span class="text-subtitle-2 text-caption ">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  -->
                     
                   </div>
                     <v-divider></v-divider>
                     <div>
-                     <v-row>
-                       <v-col>
-                         
-                       </v-col>
-                       <v-col>
+                  
+                       <div class="justify-center pt-3">
+                        <v-avatar 
+                          class="float-left "
+                          size="36">
+                            <v-img
+                              src="https://randomuser.me/api/portraits/women/75.jpg"
+                              alt="Nirob"
+                            ></v-img>
+                      </v-avatar>
+                      </div>
+                        <div
+                          class="text-wrap mx-4"
+                        >
+                         <nuxt-link to="/videoView"  
+                            style="text-decoration: none; 
+                                    color: white;
+                                  ">
+                            <div class="font-weight-bold d-inline pl-3" > <span>The Net Ninja </span>  <v-icon size="12" class="d-inline">mdi-check-circle</v-icon></div>  
+                              </nuxt-link>
+                                <v-btn
+                                  depressed
+                                  color="error"
+                                  class=" d-inline float-right"
+                                >
+                                  Subcribe
+                                </v-btn>
+                            <div  
+                              style="text-decoration: none; 
+                                      color: white;
+                                    ">
+                              <h6 class=" font-weight-light d-block pl-8 " >1M Subcriber</h6>  
+                            </div> 
+                              <div class="pl-8 text-wrap  white--text ">
+                              <span class="mb-4">
+                               
+                                   
+                                  <div>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.
+                                    
+                                </div>
+                                <v-expand-transition class="bottom">
+                                <div v-show="show">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.
+                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, qui.
+                                    I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+                                
+                                </div>
+                            </v-expand-transition>
+                              </span>
+                                <div
+                                color="orange lighten-2"
+                                text
+                                @click="show = !show"
+                              >
+                            
+                                <span>{{ show ? 'SHOW LESS' : 'SHOW MORE' }}</span>
+                            
+                              </div>
+                              </div>
+                            
+                             <v-divider></v-divider>
+                             <div class="d-inline"> f</div>
+                             <div class="d-inline">fdd</div>
+                             <v-divider></v-divider>
 
-                       </v-col>
-                     </v-row>
+                        </div>
                     </div>
                 </v-col>
               </v-row>
             </v-responsive>
         </v-col>
       <v-col
-      cols="12"
-      md="3" lg="3" sm="12" xs="12"
+     cols="12"
+      xs="12"
+      sm="12"
+      md="3" 
+      lg="3"  
         style="min-width: 100px;"
         class="flex-grow-0 flex-shrink-1 pl-3"
       >
@@ -121,6 +180,27 @@ import RelatedVideo from '~/components/RelatedVideo.vue'
       cards: [
         { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
       ],
+      // --------list of link//
+      items: [
+        {
+          details: 'mdi-inbox',
+          text: 'Inbox',
+        },
+        {
+          details: 'mdi-star',
+          text: 'Star',
+        },
+        {
+          details: 'mdi-send',
+          text: 'Send',
+        },
+        {
+          details: 'mdi-email-open',
+          text: 'Drafts',
+        },
+      ],
+       show: false,
+    
     }),
   }
 </script>

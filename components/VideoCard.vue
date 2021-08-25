@@ -63,16 +63,19 @@
              <v-col
               cols="12" 
                md="2" lg="2" sm="2">
+               <div class="mt-3 px-2">
                 <v-avatar 
-                 class="float-left mt-3 pl-2"
+                 class="float-left  pa-2"
                  size="36">
                   <img
                     src="https://randomuser.me/api/portraits/women/75.jpg"
                     alt="Nirob"
                   />
                 </v-avatar>
+                </div>
                 </v-col> 
                 <v-col md="10" lg="10" sm="10" class="ma-0 pa-0 mt-3 mb-3">
+                  <div class="pl-2">
                     <v-icon class="float-right pt-4 pr-2">mdi-dots-vertical</v-icon>
                           <nuxt-link to="/videoView" style="text-decoration: none; color: inherit;">
                              <h4 class="mt-3">Nissan GTR Vs a Woman | Top Gear Festival Sydney.</h4>
@@ -83,6 +86,7 @@
                         <div>
                           <span class="text-subtitle-2 d-inline text-caption"> 1 M view</span>
                           <span class="text-subtitle-2 d-inline text-caption">. 1 week ago</span>
+                      </div>
                       </div>
               </v-col> 
             </v-row>
