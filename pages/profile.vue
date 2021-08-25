@@ -1,50 +1,85 @@
 <template>
-  <v-card class="overflow-hidden">
-    <v-app-bar
-      absolute
-      color="inherit"
-      shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
-      fade-img-on-scroll
-      scroll-target="#scrolling-techniques-3"
-    >
-      <template  #img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
-        ></v-img>
-      </template>
+  <v-container dark>
+    <v-row no-gutters dense>
+      <v-col
+        cols="12"
+        
+        class="flex-grow-1 flex-shrink-0"
+      >
+        <v-responsive :aspect-ratio="18 / 9">
+          <v-row dense>
+            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+              <v-card>
+                <v-img :src="card.src" height="400px" />
 
-      <v-app-bar-title class="overflow-hidden">Title</v-app-bar-title>
+                 <profile-tabs />
 
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-
-      <template #extension>
-        <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
-        </v-tabs>
-      </template>
-    </v-app-bar>
-    <v-sheet
-      id="scrolling-techniques-3"
-      class="overflow-y-auto scrolling-techniques-3"
-      max-height="600"
-    >
-      <v-container style="height: 1000px;"></v-container>
-    </v-sheet>
-  </v-card>
+              </v-card>
+              
+             
+            </v-col>
+          </v-row>
+        </v-responsive>
+      </v-col>
+     
+    </v-row>
+  </v-container>
 </template>
+
+<script>
+export default {
+
+  data: () => ({
+    cards: [
+      {
+        title: 'Pre-fab homes',
+        src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+        flex: 12,
+      },
+    ],
+    // --------list of link//
+    items: [
+      {
+        details: 'mdi-inbox',
+        text: 'Inbox',
+      },
+      {
+        details: 'mdi-star',
+        text: 'Star',
+      },
+      {
+        details: 'mdi-send',
+        text: 'Send',
+      },
+      {
+        details: 'mdi-email-open',
+        text: 'Drafts',
+      },
+    ],
+    show: false,
+
+    // ------------//
+   
+    // ------------//
+    
+  }),
+}
+</script>
+
+
+
+
+
+
+
+
+<style scoped>
+.matchColor {
+  background-color: rgba(12, 9, 9, 0.5) !important;
+  border-color: white !important;
+}
+.linkStyle{
+  text-decoration: none;
+   color: white;
+}
+</style>

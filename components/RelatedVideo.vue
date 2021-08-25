@@ -44,7 +44,6 @@
 
 
              </nuxt-link>
-             <!-- <nuxt-link to="/videoView" class="#928E92--text" style="text-decoration: none; color: inherit;"> -->
               <nuxt-link to="/profile" class="linkStyle">
               <span class="text-subtitle-2 text-caption">The Net Ninja  <v-icon size="12">mdi-check-circle</v-icon></span>  
             </nuxt-link>
