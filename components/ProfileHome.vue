@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row no-gutters>
-      <v-col md="12">
+      <v-col md="12" sm="12">
         <v-card class="pa-2" flat tile>
           <v-row no-gutters>
             <v-col md="4" sm="4">
@@ -83,92 +83,82 @@
                       Assumenda, qui.Lorem ipsum, dolor sit amet consectetur
                       adipisicing elit. Assumenda, qui.
                     </p>
-                    <v-expand-transition class="bottom">
-                      <div v-show="show">
-                        <nuxt-link to="/videoView" class="linkStyle">
-                          <h5 class="text-wrap pl-4">
-                            Join the video description.
-                          </h5>
-                        </nuxt-link>
-                      </div>
-                    </v-expand-transition>
+                    
                   </span>
-                  <div  text @click="show = !show">
+                   <nuxt-link to="/videoView" class="linkStyle">
+                  <div text @click="show = !show">
                     <v-btn text class="pa-0">
                       <span>{{ show ? 'READ LESS' : 'READ MORE' }}</span>
                     </v-btn>
                   </div>
+                   </nuxt-link>
                 </div>
               </v-card>
             </v-col>
           </v-row>
           <v-divider></v-divider>
 
-         <v-row class="fill-height">
-          <div class="pa-4">
-            <div class="d-inline">Uploads</div>
-            <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
-            <h5 class="d-inline pa-2">PLAY ALL</h5>
-          </div>
+          <v-row class="fill-height">
+            <div class="pa-4">
+              <div class="d-inline">Uploads</div>
+              <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
+              <h5 class="d-inline pa-2">PLAY ALL</h5>
+            </div>
 
-          <v-sheet max-width="100%" flat>
-            <v-slide-group multiple class="absulate">
-              <v-slide-item v-for="n in 20" :key="n">
-                <v-card class="mx-auto pa-2">
-                  <v-img
-                    class="white--text align-end"
-                    height="120px"
-                    width="200px"
-                    src="https://picsum.photos/350/165"
-                  >
-                  </v-img>
-
-                  <h4 class="pb-0 text-truncate">Title Number 10</h4>
-
-                  <h6 class="text--primary">
-                      <h4>Make Apps with Danny</h4>
-                    <span class="font-weight-thin">1.5K View </span>.<span class="font-weight-thin" >
-                      2 month ago</span
+            <v-sheet max-width="100%" flat>
+              <v-slide-group multiple class="absulate">
+                <v-slide-item v-for="n in 20" :key="n">
+                  <v-card class="mx-auto pa-2">
+                    <v-img
+                      class="white--text align-end"
+                      height="120px"
+                      width="220px"
+                      src="https://picsum.photos/350/165"
                     >
-                  </h6>
-                </v-card>
-              </v-slide-item>
-            </v-slide-group>
-          </v-sheet>
-         </v-row>
+                    </v-img>
 
-         <v-row class="fill-height">
-          <div class="pa-4">
-            <div class="d-inline">APPS IN 30 MINUTES!</div>
-            <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
-            <h5 class="d-inline pa-2">PLAY ALL</h5>
-          </div>
+                    <h4 class="pb-0 pt-2 text-truncate">Title Number 10</h4>
+                        <h5 class="text--primary">Make Apps with Danny</h5>
+                    <h6 class="text--primary  pt-2">
+                     
+                      <span class="font-weight-thin">1.5K View </span>.<span
+                        class="font-weight-thin" > 2 month ago</span>
+                    </h6>
+                  </v-card>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
+          </v-row>
 
-          <v-sheet max-width="100%" flat>
-            <v-slide-group multiple>
-              <v-slide-item v-for="n in 20" :key="n">
-                <v-card class="mx-auto pa-2">
-                  <v-img
-                    class="white--text align-end"
-                    height="120px"
-                    width="200px"
-                    src="https://picsum.photos/350/165?random"
-                  >
-                  </v-img>
+          <v-row class="fill-height">
+            <div class="pa-4">
+              <div class="d-inline">APPS IN 30 MINUTES!</div>
+              <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
+              <h5 class="d-inline pa-2">PLAY ALL</h5>
+            </div>
 
-                  <h4 class="pb-0 text-truncate">Title Number 10</h4>
-
-                  <h6 class="text--primary">
-                    <h4>Make Apps with Danny</h4>
-                    <span class="font-weight-thin">1.5K View </span>.
-                    <span class="font-weight-thin" >2 month ago</span
+            <v-sheet max-width="100%" flat>
+              <v-slide-group multiple>
+                <v-slide-item v-for="n in 20" :key="n">
+                  <v-card class="mx-auto pa-2">
+                    <v-img
+                      class="white--text align-end"
+                      height="120px"
+                      width="220px"
+                      src="https://picsum.photos/350/165?random"
                     >
-                  </h6>
-                </v-card>
-              </v-slide-item>
-            </v-slide-group>
-          </v-sheet>
-         </v-row>
+                    </v-img>
+
+                    <h4 class="pb-0 pt-2 text-truncate">Title Number 10</h4>
+                        <h5 class="text--primary">Make Apps with Danny</h5>
+                    <h6 class="text--primary pt-2">
+                      <span class="font-weight-thin ">1.5K View </span>.<span class="font-weight-thin" > 2 month ago</span>
+                    </h6>
+                  </v-card>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
+          </v-row>
           <v-divider></v-divider>
         </v-card>
       </v-col>

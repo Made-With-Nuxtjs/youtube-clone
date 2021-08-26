@@ -45,15 +45,10 @@
                     ># coding
                   </span>
                 </nuxt-link>
-                <nuxt-link
-                  to="/videoView"
-                  class="linkStyle"
-                >
+                <nuxt-link to="/videoView" class="linkStyle">
                   <div
                     class="text-wrap pb-4 linkStyle"
-                    style="
-                      font-family: Robot, Arial, sans-serif;
-                    "
+                    style="font-family: Robot, Arial, sans-serif"
                   >
                     Suspendisse faucibus, nunc et pellentesque egestas, lacus
                     ante convallis tellus.
@@ -92,7 +87,7 @@
               <v-divider></v-divider>
               <div>
                 <div class="justify-center pt-3">
-                   <nuxt-link to="/profile" class="linkStyle">    
+                  <nuxt-link to="/profile" class="linkStyle">
                     <v-avatar class="float-left" size="36">
                       <v-img
                         src="https://cdn.vuetifyjs.com/images/john.png"
@@ -102,13 +97,10 @@
                   </nuxt-link>
                 </div>
                 <div class="text-wrap mx-4">
-                  <nuxt-link
-                    to="/videoView"
-                    class="linkStyle"
-                  >
+                  <nuxt-link to="/videoView" class="linkStyle">
                     <div class="font-weight-bold d-inline pl-3">
                       <nuxt-link to="/profile" class="linkStyle">
-                           <span >The Net Ninja </span>
+                        <span>The Net Ninja </span>
                       </nuxt-link>
                       <v-icon size="12" class="d-inline"
                         >mdi-check-circle</v-icon
@@ -205,21 +197,24 @@
 
                   <div class="pt-7">
                     <div class="d-inline-flex white--text">
-                          <div class="d-inline justify-center">
-                      <v-avatar size="36">
-                        <v-img
-                          src="https://randomuser.me/api/portraits/women/75.jpg"
-                          alt="Nirob"
-                        ></v-img>
-                      </v-avatar>
-                    </div>
+                      <div class="d-inline justify-center">
+                        <v-avatar size="36">
+                          <v-img
+                            src="https://randomuser.me/api/portraits/women/75.jpg"
+                            alt="Nirob"
+                          ></v-img>
+                        </v-avatar>
+                      </div>
                     </div>
                     <div class="d-inline-flex">
-                      <div class=" white--text ">
-                        <div class="d-flex white--text pl-8"><h5>hello mr</h5></div>
-                        <div class="d-flex white--text pl-8"><h5>hello mr xyc</h5></div>
+                      <div class="white--text">
+                        <div class="d-flex white--text pl-8">
+                          <h5>hello mr</h5>
+                        </div>
+                        <div class="d-flex white--text pl-8">
+                          <h5>hello mr xyc</h5>
+                        </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -276,7 +271,6 @@ export default {
       },
     ],
     show: false,
-    
   }),
 }
 </script>
@@ -286,8 +280,8 @@ export default {
   background-color: rgba(12, 9, 9, 0.5) !important;
   border-color: white !important;
 }
-.linkStyle{
+.linkStyle {
   text-decoration: none;
-   color: white;
+  color: white;
 }
 </style>
