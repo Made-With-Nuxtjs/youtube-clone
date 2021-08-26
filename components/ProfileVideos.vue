@@ -6,12 +6,10 @@
         >
             <v-card
             class="pa-2"
-            flat
+            outlined
             tile
             >
-
             .col-md-6 .offset-md-3
-            
             </v-card>
         </v-col>
         </v-row>
