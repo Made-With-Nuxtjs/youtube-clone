@@ -1,6 +1,6 @@
 <template>
 <v-container dense>
-  <v-layout row  cols="12" 
+  <v-layout row 
   class="justify-center"
    >
     <div  v-for="n in 10" :key="n">
@@ -61,7 +61,6 @@
         <div>
           <v-row>
              <v-col
-              cols="12" 
                md="2" lg="2" sm="2">
                <div class="mt-3 px-2">
                 <v-avatar 

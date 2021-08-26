@@ -44,7 +44,9 @@
             <v-tab>COMMUNITY</v-tab>
             <v-tab>CHANNEL</v-tab>
             <v-tab>ABOUT</v-tab>
-            <div>search</div>
+            <div class="mt-2"> 
+                <v-icon class="d-inline " size="20">mdi-magnify</v-icon>
+            </div>
                 <v-tab-item>
                     <profile-home/>
                 </v-tab-item>
