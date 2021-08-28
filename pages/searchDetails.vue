@@ -13,7 +13,7 @@
               </div>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <v-row class="mb-6">
+              <v-row class="my-2">
                 <v-col>
                   <h5 class="text-caption">UPLOAD DATE</h5>
                   <hr />
@@ -135,11 +135,10 @@
                     </span>
                   </div>
                   <span
-                    class="d-inline-block text-truncate text--disabled"
+                    class="d-inline-block text-truncate text--disabled py-2"
                     style="max-width: 575px"
                   >
-                    Suspendisse faucibus, nunc et pellentesque egestas, lacus
-                    ante convallis tellus hellgdfhdhfj hgefhhjhf.
+                   <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio voluptates nisi illum amet accusantium eligendi deserunt blanditiis, numquam eos?</h5>
                   </span>
                 </nuxt-link>
               </div>
