@@ -1,4 +1,5 @@
 <template>
+
   <v-autocomplete
     v-model="model"
     :items="items"
@@ -12,8 +13,9 @@
     item-value="symbol"
     label="Search ..."
     solo
-   class="rounded-pill"
+    dense
   >
+ 
     <template #no-data>
       <v-list-item>
         <v-list-item-title>
@@ -49,6 +51,7 @@
         <v-icon>mdi-bitcoin</v-icon>
       </v-list-item-action>
     </template>
+    
   </v-autocomplete>
 </template>
 <script>
