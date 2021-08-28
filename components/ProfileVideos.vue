@@ -5,7 +5,7 @@
         <v-row>
           <div v-for="n in 24" :key="n">
             <v-col v-for="v in 6" :key="v">
-              <v-card flat class="flex-nowrap">
+              <v-card flat class="flex-nowrap ">
                 <v-img
                   class="white--text align-end"
                   height="115px"

@@ -1,5 +1,5 @@
-<template>
-  <v-container>
+<template class="matchColor">
+  <v-container >
     <v-row no-gutters>
       <v-col md="10" sm="10" offset-md="1" offset-sm="1">
         <v-card flat>
@@ -22,16 +22,16 @@
               </div>
             </div>
           </div>
-          <v-btn color="error" class="d-inline float-right mt-6">
+          <v-btn color="error" class="d-inline float-right mt-6 text-uppercase">
             Subcribe
           </v-btn>
           <v-tabs color="inherit" fixed class="justify-space-between">
-            <v-tab class="pr2">HOME</v-tab>
-            <v-tab class="pr2">VIDEOS</v-tab>
-            <v-tab class="pr2">PLAYLISTS</v-tab>
-            <v-tab class="pr2">COMMUNITY</v-tab>
-            <v-tab class="pr2">CHANNEL</v-tab>
-            <v-tab class="pr2">ABOUT</v-tab>
+            <v-tab class="pr-10 text-uppercase">Home</v-tab>
+            <v-tab class="pr-10 text-uppercase">Videos</v-tab>
+            <v-tab class="pr-10 text-uppercase">PLAYLISTS</v-tab>
+            <v-tab class="pr-10 text-uppercase">COMMUNITY</v-tab>
+            <v-tab class="pr-10 text-uppercase">CHANNEL</v-tab>
+            <v-tab class="pr-10 text-uppercase">About</v-tab>
             <div class="mt-2">
               <v-icon class="d-inline" size="20">mdi-magnify</v-icon>
             </div>
@@ -45,13 +45,13 @@
               <profile-video-play-list />
             </v-tab-item>
             <v-tab-item>
-              <profile-videos />
+              <profile-community />
             </v-tab-item>
             <v-tab-item>
               <profile-videos />
             </v-tab-item>
             <v-tab-item>
-              <profile-videos />
+              <profile-about />
             </v-tab-item>
           </v-tabs>
         </v-card>
@@ -59,3 +59,14 @@
     </v-row>
   </v-container>
 </template>
+<style scoped>
+.matchColor {
+  background-color: rgba(19, 17, 17, 0.959) !important;
+  border-color: #131111;
+  
+}
+.linkStyle {
+  text-decoration: none;
+  color: white;
+}
+</style>

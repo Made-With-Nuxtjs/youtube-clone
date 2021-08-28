@@ -178,7 +178,7 @@ export default {
 
 <style scoped>
 .matchColor {
-  background-color: rgba(12, 9, 9, 0.5) !important;
+  background-color:#131111;
   border-color: white !important;
 }
 .linkStyle {
