@@ -1,92 +1,125 @@
 <template>
-
-  <v-autocomplete
-    v-model="model"
-    :items="items"
-    :loading="isLoading"
-    :search-input.sync="search"
-    chips
-    clearable
-    hide-details
-    hide-selected
-    item-text="name"
-    item-value="symbol"
-    label="Search ..."
-    solo
+<!-- <a href="/searchDetails"> -->
+<v-form :@click:>
+    <v-container>
+  <v-toolbar
+    dark
+    flat
     dense
   >
- 
-    <template #no-data>
-      <v-list-item>
-        <v-list-item-title>
-          Search for your favorite
-          <strong>video</strong>
-        </v-list-item-title>
-      </v-list-item>
-    </template>
-    <template #selection="{ attr, on, item, selected }">
-      <v-chip
-        v-bind="attr"
-        :input-value="selected"
-        color="blue-grey"
-        class="white--text"
-        v-on="on"
-      >
-        <v-icon left> mdi-bitcoin </v-icon>
-        <span v-text="item.name"></span>
-      </v-chip>
-    </template>
-    <template #item="{ item }">
-      <v-list-item-avatar
-        color="indigo"
-        class="text-h5 font-weight-light white--text"
-      >
-        {{ item.name.charAt(0) }}
-      </v-list-item-avatar>
-      <v-list-item-content>
-        <v-list-item-title v-text="item.name"></v-list-item-title>
-        <v-list-item-subtitle v-text="item.symbol"></v-list-item-subtitle>
-      </v-list-item-content>
-      <v-list-item-action>
-        <v-icon>mdi-bitcoin</v-icon>
-      </v-list-item-action>
-    </template>
-    
-  </v-autocomplete>
+    <v-autocomplete
+      v-model="select"
+      :loading="loading"
+      :items="items"
+      :search-input.sync="search"
+      cache-items
+      class="mx-4"
+      flat
+      dense
+      hide-no-data
+      hide-details
+      label="What state are you from?"
+      solo-inverted
+    ></v-autocomplete>
+   <v-icon>mdi-magnify</v-icon>
+  </v-toolbar>
+  </v-container>
+  </v-form>
+  <!-- </a> -->
 </template>
+
+
+
+
+
 <script>
-export default {
-  data: () => ({
-    isLoading: false,
-    items: [],
-    model: null,
-    search: null,
-    tab: null,
-  }),
-
-  watch: {
-    model(val) {
-      if (val != null) this.tab = 0
-      else this.tab = null
+  export default {
+    data () {
+      return {
+        loading: false,
+        items: [],
+        search: null,
+        select: null,
+        states: [
+          'Alabama',
+          'Alaska',
+          'American Samoa',
+          'Arizona',
+          'Arkansas',
+          'California',
+          'Colorado',
+          'Connecticut',
+          'Delaware',
+          'District of Columbia',
+          'Federated States of Micronesia',
+          'Florida',
+          'Georgia',
+          'Guam',
+          'Hawaii',
+          'Idaho',
+          'Illinois',
+          'India',
+          'Iowa',
+          'Kansas',
+          'Kentucky',
+          'Louisiana',
+          'Maine',
+          'Marshall Islands',
+          'Maryland',
+          'Massachusetts',
+          'Michigan',
+          'Minnesota',
+          'Mississippi',
+          'Missouri',
+          'Montana',
+          'Nebraska',
+          'Nevada',
+          'New Hampshire',
+          'New Jersey',
+          'New Mexico',
+          'New York',
+          'North Carolina',
+          'North Dakota',
+          'Northern Mariana Islands',
+          'Ohio',
+          'Oklahoma',
+          'Oregon',
+          'Palau',
+          'Pennsylvania',
+          'Puerto Rico',
+          'Rhode Island',
+          'South Carolina',
+          'South Dakota',
+          'Tennessee',
+          'Texas',
+          'Utah',
+          'Vermont',
+          'Virgin Island',
+          'Virginia',
+          'Washington',
+          'West Virginia',
+          'Wisconsin',
+          'Wyoming',
+          'Bangladesh',
+        ],
+      }
     },
-    search(val) {
-      // Items have already been loaded
-      if (this.items.length > 0) return
-
-      this.isLoading = true
-
-      // Lazily load input items
-      fetch('https://api.coingecko.com/api/v3/coins/list')
-        .then((res) => res.clone().json())
-        .then((res) => {
-          this.items = res
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-        .finally(() => (this.isLoading = false))
+    watch: {
+      search (val) {
+        val && val !== this.select && this.querySelections(val)
+      },
     },
-  },
-}
-// help from https://vuetifyjs.com/en/components/autocompletes/#cryptocurrency-selector
+    methods: {
+      querySelections (v) {
+        this.loading = true
+        // Simulated ajax query
+        setTimeout(() => {
+          this.items = this.states.filter(e => {
+            return (e || '').toLowerCase().includes((v || '').toLowerCase()) > -1
+          })
+          this.loading = false
+        }, 500)
+      },
+    },
+  }
 </script>
