@@ -10,7 +10,6 @@
       temporary
       expand-on-hover
     >
-      
       <div class="d-flex">
         <v-app-bar-nav-icon class="ml-3 mt-3" @click.stop="drawer = !drawer" />
         <img class="logo mt-4 ml-5" src="/logo.png" alt="logo" />

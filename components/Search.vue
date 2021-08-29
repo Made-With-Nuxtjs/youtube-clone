@@ -1,29 +1,25 @@
 <template>
-<!-- <a href="/searchDetails"> -->
-<v-form :@click:>
+  <!-- <a href="/searchDetails"> -->
+  <v-form >
     <v-container>
-  <v-toolbar
-    dark
-    flat
-    dense
-  >
-    <v-autocomplete
-      v-model="select"
-      :loading="loading"
-      :items="items"
-      :search-input.sync="search"
-      cache-items
-      class="mx-4"
-      flat
-      dense
-      hide-no-data
-      hide-details
-      label="What state are you from?"
-      solo-inverted
-    ></v-autocomplete>
-   <v-icon>mdi-magnify</v-icon>
-  </v-toolbar>
-  </v-container>
+      <v-toolbar dark flat dense>
+        <v-autocomplete
+          v-model="select"
+          :loading="loading"
+          :items="items"
+          :search-input.sync="search"
+          cache-items
+          class="mx-4"
+          flat
+          dense
+          hide-no-data
+          hide-details
+          label="What state are you from?"
+          solo-inverted
+        ></v-autocomplete>
+        <v-icon>mdi-magnify</v-icon>
+      </v-toolbar>
+    </v-container>
   </v-form>
   <!-- </a> -->
 </template>
@@ -33,93 +29,93 @@
 
 
 <script>
-  export default {
-    data () {
-      return {
-        loading: false,
-        items: [],
-        search: null,
-        select: null,
-        states: [
-          'Alabama',
-          'Alaska',
-          'American Samoa',
-          'Arizona',
-          'Arkansas',
-          'California',
-          'Colorado',
-          'Connecticut',
-          'Delaware',
-          'District of Columbia',
-          'Federated States of Micronesia',
-          'Florida',
-          'Georgia',
-          'Guam',
-          'Hawaii',
-          'Idaho',
-          'Illinois',
-          'India',
-          'Iowa',
-          'Kansas',
-          'Kentucky',
-          'Louisiana',
-          'Maine',
-          'Marshall Islands',
-          'Maryland',
-          'Massachusetts',
-          'Michigan',
-          'Minnesota',
-          'Mississippi',
-          'Missouri',
-          'Montana',
-          'Nebraska',
-          'Nevada',
-          'New Hampshire',
-          'New Jersey',
-          'New Mexico',
-          'New York',
-          'North Carolina',
-          'North Dakota',
-          'Northern Mariana Islands',
-          'Ohio',
-          'Oklahoma',
-          'Oregon',
-          'Palau',
-          'Pennsylvania',
-          'Puerto Rico',
-          'Rhode Island',
-          'South Carolina',
-          'South Dakota',
-          'Tennessee',
-          'Texas',
-          'Utah',
-          'Vermont',
-          'Virgin Island',
-          'Virginia',
-          'Washington',
-          'West Virginia',
-          'Wisconsin',
-          'Wyoming',
-          'Bangladesh',
-        ],
-      }
+export default {
+  data() {
+    return {
+      loading: false,
+      items: [],
+      search: null,
+      select: null,
+      states: [
+        'Alabama',
+        'Alaska',
+        'American Samoa',
+        'Arizona',
+        'Arkansas',
+        'California',
+        'Colorado',
+        'Connecticut',
+        'Delaware',
+        'District of Columbia',
+        'Federated States of Micronesia',
+        'Florida',
+        'Georgia',
+        'Guam',
+        'Hawaii',
+        'Idaho',
+        'Illinois',
+        'India',
+        'Iowa',
+        'Kansas',
+        'Kentucky',
+        'Louisiana',
+        'Maine',
+        'Marshall Islands',
+        'Maryland',
+        'Massachusetts',
+        'Michigan',
+        'Minnesota',
+        'Mississippi',
+        'Missouri',
+        'Montana',
+        'Nebraska',
+        'Nevada',
+        'New Hampshire',
+        'New Jersey',
+        'New Mexico',
+        'New York',
+        'North Carolina',
+        'North Dakota',
+        'Northern Mariana Islands',
+        'Ohio',
+        'Oklahoma',
+        'Oregon',
+        'Palau',
+        'Pennsylvania',
+        'Puerto Rico',
+        'Rhode Island',
+        'South Carolina',
+        'South Dakota',
+        'Tennessee',
+        'Texas',
+        'Utah',
+        'Vermont',
+        'Virgin Island',
+        'Virginia',
+        'Washington',
+        'West Virginia',
+        'Wisconsin',
+        'Wyoming',
+        'Bangladesh',
+      ],
+    }
+  },
+  watch: {
+    search(val) {
+      val && val !== this.select && this.querySelections(val)
     },
-    watch: {
-      search (val) {
-        val && val !== this.select && this.querySelections(val)
-      },
+  },
+  methods: {
+    querySelections(v) {
+      this.loading = true
+      // Simulated ajax query
+      setTimeout(() => {
+        this.items = this.states.filter((e) => {
+          return (e || '').toLowerCase().includes((v || '').toLowerCase()) > -1
+        })
+        this.loading = false
+      }, 500)
     },
-    methods: {
-      querySelections (v) {
-        this.loading = true
-        // Simulated ajax query
-        setTimeout(() => {
-          this.items = this.states.filter(e => {
-            return (e || '').toLowerCase().includes((v || '').toLowerCase()) > -1
-          })
-          this.loading = false
-        }, 500)
-      },
-    },
-  }
+  },
+}
 </script>
