@@ -1,8 +1,7 @@
 <template>
-  <v-container style="width:35%" >
+  <v-container style="width: 37% ; " >
     <v-toolbar dense flat>
       <v-autocomplete
-        v-model="select"
         :loading="loading"
         :items="items"
         :search-input.sync="search"
@@ -10,19 +9,15 @@
         flat
         dense
         hide-details
-        label="What state are you from?"
+        label="Search"
         solo
       ></v-autocomplete>
       <a href="/searchDetails" class="linkStyle">
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon class="pl-2">mdi-magnify</v-icon>
       </a>
     </v-toolbar>
   </v-container>
 </template>
-
-
-
-
 
 <script>
 export default {
@@ -116,14 +111,11 @@ export default {
 }
 </script>
 
-
-
-
 <style scoped>
-
 .linkStyle {
   text-decoration: none;
   /* color: white; */
 }
+
 
 </style>

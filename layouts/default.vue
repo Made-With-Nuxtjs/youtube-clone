@@ -12,8 +12,15 @@
     >
       <div class="d-flex">
         <v-app-bar-nav-icon class="ml-3 mt-3" @click.stop="drawer = !drawer" />
-        <img class="logo mt-4 ml-5" src="/logo.png" alt="logo" />
-        <v-toolbar-title class="float-right mt-4 drawer-title" v-text="title" />
+        <nuxt-link to="/">
+          <img class="logo mt-4 ml-5" src="/logo.png" alt="logo" />
+        </nuxt-link>
+        <nuxt-link to="/">
+          <v-toolbar-title
+            class="float-right mt-4 drawer-title"
+            v-text="title"
+          />
+        </nuxt-link>
       </div>
       <v-list>
         <v-list-item
@@ -34,8 +41,12 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon ml-2 @click.stop="drawer = !drawer" />
-      <img class="logo ml-3" src="/logo.png" alt="logo" />
-      <v-toolbar-title v-text="title" />
+      <nuxt-link to="/">
+        <img class="logo ml-3" src="/logo.png" alt="logo" />
+      </nuxt-link>
+      <nuxt-link to="/" class="linkStyle">
+        <v-toolbar-title v-text="title" />
+      </nuxt-link>
       <v-spacer />
       <Search />
       <v-btn icon>
@@ -45,19 +56,20 @@
       <v-btn icon>
         <v-icon>mdi-video</v-icon>
       </v-btn>
+       <v-btn icon>
+        <v-icon>mdi-dialpad</v-icon>
+      </v-btn>
       <v-btn icon>
         <v-icon>mdi-bell</v-icon>
       </v-btn>
-      <v-btn icon>
-        <v-icon>mdi-dialpad</v-icon>
-      </v-btn>
-      <v-avatar size="36px">
+      <!-- <v-avatar size="36px">
         <img
           class="avatar"
           src="https://randomuser.me/api/portraits/women/75.jpg"
           alt="John"
         />
-      </v-avatar>
+      </v-avatar> -->
+      <logger-options/>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -107,6 +119,7 @@ export default {
           title: 'Search',
           to: '/searchDetails',
         },
+       
       ],
       miniVariant: false,
       // right: true,
@@ -123,9 +136,10 @@ export default {
   width: 10px;
 }
 img.logo {
-  height: 28px;
+  height: 25px;
   width: 29px;
   margin-right: 2px;
+  margin-top: 4px;
 }
 .theme--dark.v-application {
   color: rgb(30 29 30);
@@ -133,8 +147,8 @@ img.logo {
 .drawer-title {
   color: white;
 }
+.linkStyle {
+  text-decoration: none;
+  color: white;
+}
 </style>
-
-
-
-

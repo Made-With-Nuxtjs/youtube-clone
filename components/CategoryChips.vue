@@ -7,8 +7,8 @@
       class="cardColor"
     >
       <v-sheet
-        elevation="10"
-        class="py-4 px-1"
+        elevation="8"
+       
       >
         <v-chip-group
           multiple
@@ -69,4 +69,7 @@
    background-color: rgba(12, 9, 9, 0.5) !important;
    border-color: white !important;
  }
+ .row {
+    margin: -18px;
+}
 </style>
