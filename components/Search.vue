@@ -1,5 +1,5 @@
 <template>
-  <!-- <a href="/searchDetails"> -->
+  <a href="/searchDetails">
   <v-form >
     <v-container>
       <v-toolbar dark flat dense>
@@ -21,7 +21,7 @@
       </v-toolbar>
     </v-container>
   </v-form>
-  <!-- </a> -->
+  </a>
 </template>
 
 
