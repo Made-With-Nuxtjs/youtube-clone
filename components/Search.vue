@@ -1,27 +1,23 @@
 <template>
-  <a href="/searchDetails">
-  <v-form >
-    <v-container>
-      <v-toolbar dark flat dense>
-        <v-autocomplete
-          v-model="select"
-          :loading="loading"
-          :items="items"
-          :search-input.sync="search"
-          cache-items
-          class="mx-4"
-          flat
-          dense
-          hide-no-data
-          hide-details
-          label="What state are you from?"
-          solo-inverted
-        ></v-autocomplete>
+  <v-container style="width:35%" >
+    <v-toolbar dense flat>
+      <v-autocomplete
+        v-model="select"
+        :loading="loading"
+        :items="items"
+        :search-input.sync="search"
+        cache-items
+        flat
+        dense
+        hide-details
+        label="What state are you from?"
+        solo
+      ></v-autocomplete>
+      <a href="/searchDetails" class="linkStyle">
         <v-icon>mdi-magnify</v-icon>
-      </v-toolbar>
-    </v-container>
-  </v-form>
-  </a>
+      </a>
+    </v-toolbar>
+  </v-container>
 </template>
 
 
@@ -119,3 +115,15 @@ export default {
   },
 }
 </script>
+
+
+
+
+<style scoped>
+
+.linkStyle {
+  text-decoration: none;
+  /* color: white; */
+}
+
+</style>
