@@ -2,14 +2,9 @@
   <v-row >
     <v-col
       cols="12"
-      sm="12"
-      md="12"
       class="cardColor"
     >
-      <v-sheet
-        elevation="8"
-       
-      >
+      <v-sheet>
         <v-chip-group
           multiple
           active-class="primary--text"

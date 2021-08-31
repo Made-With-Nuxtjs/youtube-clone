@@ -2,7 +2,7 @@ v-<template>
   <div>
           <v-divider></v-divider>
 
-    <h4 class="overline pl-4 text--disabled" dense tile>Subcriptions</h4>
+    <h4 class="overline pl-4 text--disabled">Subcriptions</h4>
     <v-list-item
       v-for="(item, i) in items"
       :key="i"

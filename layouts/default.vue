@@ -29,8 +29,8 @@
           :to="item.to"
           router
           exact
-          dense tile
-
+          dense
+          tile
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -39,25 +39,17 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
-       
-        <nav-subcriptions/>
-        <nav-more-from-youtube/>
-        <nav-setting-related/>
 
+        <nav-subcriptions />
+        <nav-more-from-youtube />
+        <nav-setting-related />
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon ml-2 @click.stop="drawer = !drawer" />
-      <nuxt-link to="/" 
-      >
-        <img class="logo ml-3" src="/logo.png" alt="logo" />
+      <nuxt-link to="/">
+        <img class="logo ml-3 mr-1" src="/logo.png" alt="logo" />
       </nuxt-link>
-       <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
       <nuxt-link to="/" class="linkStyle">
         <v-toolbar-title v-text="title" />
       </nuxt-link>
@@ -68,31 +60,49 @@
       </v-btn>
       <v-spacer />
       <v-btn icon>
-        <v-icon>mdi-video-plus-outline</v-icon>
+        <v-icon>mdi-video</v-icon>
       </v-btn>
-       <v-btn icon>
+      <v-btn icon>
         <v-icon>mdi-apps</v-icon>
       </v-btn>
       <v-btn icon>
         <v-icon>mdi-bell</v-icon>
       </v-btn>
-    
-      <logger-options/>
+
+      <logger-options />
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    
+    <v-bottom-navigation
+    class="d-flex d-sm-none"
+      color="white"
+      fixed
+    >
+      <v-btn>
+        <span>Recents</span>
+
+        <v-icon>mdi-history</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Favorites</span>
+
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Nearby</span>
+
+        <v-icon>mdi-map-marker</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </v-app>
 </template>
 <script>
-
-
 export default {
- 
-
   data() {
     return {
       clipped: false,
@@ -114,7 +124,7 @@ export default {
           title: 'Subcriptions',
           to: '/profile',
         },
-      
+
         {
           icon: 'mdi-play-box-multiple-outline',
           title: 'Library',
@@ -135,9 +145,6 @@ export default {
           title: 'Liked Videos',
           to: '/',
         },
-        
-        
-       
       ],
       miniVariant: false,
       // right: true,

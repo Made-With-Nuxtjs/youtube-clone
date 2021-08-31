@@ -1,5 +1,5 @@
 <template>
-  <v-container dense>
+  <v-container dense tile>
     <v-layout row class="justify-center">
       <div v-for="n in 10" :key="n">
         <v-col v-for="v in 4" :key="v">
@@ -44,7 +44,7 @@
             </nuxt-link>
             <div>
               <v-row>
-                <v-col md="2" lg="2" sm="2">
+                <v-col cols="2">
                   <div class="mt-3 px-2">
                     <v-avatar class="float-left pa-2" size="36">
                       <img
@@ -54,9 +54,9 @@
                     </v-avatar>
                   </div>
                 </v-col>
-                <v-col md="10" lg="10" sm="10" class="ma-0 pa-0 mt-3 mb-3">
+                <v-col cols="10" class="ma-0 pa-0 mt-3 mb-3">
                   <div class="pl-2">
-                    <v-icon class="float-right pt-4 pr-2"
+                    <v-icon class="float-right font-weight-thin pt-2 pr-2"
                       >mdi-dots-vertical</v-icon
                     >
                     <nuxt-link
@@ -72,12 +72,12 @@
                       class="#928E92--text"
                       style="text-decoration: none; color: inherit"
                     >
-                      <span class="text-subtitle-2 text-caption"
+                      <span class="text-subtitle-2  text-caption d-sm-flex"
                         >The Net Ninja
-                        <v-icon size="12">mdi-check-circle</v-icon></span
+                        <v-icon size="10">mdi-check-circle</v-icon></span
                       >
                     </nuxt-link>
-                    <div>
+                    <div class="d-inline-flex">
                       <span class="text-subtitle-2 d-inline text-caption">
                         1 M view</span
                       >
