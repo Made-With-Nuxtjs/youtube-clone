@@ -1,14 +1,7 @@
 <template>
   <v-container dark>
     <v-row no-gutters dense>
-      <v-col
-        cols="12"
-        xs="12"
-        sm="12"
-        md="9"
-        lg="9"
-        class="flex-grow-1 flex-shrink-0"
-      >
+      <v-col cols="12" md="9" class="flex-grow-1 flex-shrink-0">
         <v-responsive :aspect-ratio="18 / 9">
           <v-row dense>
             <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
@@ -39,30 +32,34 @@
                   </v-btn>
                 </v-card-actions>
               </v-card>
-              <div class="pt-3">
+              <div dense tile>
                 <nuxt-link to="/videoView" class="linkStyle">
                   <span class="text-subtitle-2 font-weight-light"
                     ># coding
                   </span>
                 </nuxt-link>
-                <nuxt-link to="/videoView" class="linkStyle">
-                  <div
-                    class="text-wrap pb-4 linkStyle"
-                    style="font-family: Robot, Arial, sans-serif"
-                  >
-                    Suspendisse faucibus, nunc et pellentesque egestas, lacus
-                    ante convallis tellus.
-                  </div>
-                </nuxt-link>
 
-                <div class="pb-4">
-                  <span class="text-subtitle-2 d-inline-flex font-weight-thin">
-                    1 M view</span
-                  >
-                  <span class="text-subtitle-2 d-inline-flex font-weight-thin"
-                    >. 1 week ago</span
-                  >
-                  <!-- right part -->
+                <!-- <div class="float-left"> -->
+                  <nuxt-link to="/videoView" class="linkStyle">
+                    <div
+                      class="text-wrap pb-4 linkStyle"
+                      style="font-family: Robot, Arial, sans-serif"
+                    >
+                      Suspendisse faucibus, nunc et pellentesque egestas, lacus
+                      ante convallis tellus.
+                    </div>
+                    <span
+                      class="text-subtitle-2 d-inline-flex font-weight-thin"
+                    >
+                      1 M view</span
+                    >
+                    <span class="text-subtitle-2 font-weight-thin  d-inline-flex d-none"
+                      >. 1 week ago</span
+                    >
+                  </nuxt-link>
+                <!-- </div> -->
+                <!-- right part -->
+                <div dense tile class="float-right">
                   <v-icon class="float-right pr-2 pt-1" size="16"
                     >mdi-dots-horizontal</v-icon
                   >
@@ -84,7 +81,8 @@
                   >
                 </div>
               </div>
-              <v-divider></v-divider>
+
+              <v-divider class="my-2"></v-divider>
               <div>
                 <div class="justify-center pt-3">
                   <nuxt-link to="/profile" class="linkStyle">
@@ -96,16 +94,15 @@
                     </v-avatar>
                   </nuxt-link>
                 </div>
-                <div class="text-wrap mx-4">
-                  <nuxt-link to="/videoView" class="linkStyle">
-                    <div class="font-weight-bold d-inline pl-3">
-                      <nuxt-link to="/profile" class="linkStyle">
-                        <span>The Net Ninja </span>
-                      </nuxt-link>
-                      <v-icon size="12" class="d-inline"
-                        >mdi-check-circle</v-icon
-                      >
-                    </div>
+                <div class="mx-4">
+                  <nuxt-link
+                    to="/videoView"
+                    class="font-weight-bold d-inline pl-3 linkStyle"
+                  >
+                    <nuxt-link to="/profile" class="linkStyle">
+                      <span>The Net Ninja </span>
+                    </nuxt-link>
+                    <v-icon size="12" class="d-inline">mdi-check-circle</v-icon>
                   </nuxt-link>
                   <v-btn depressed color="error" class="d-inline float-right">
                     Subcribe
@@ -225,10 +222,7 @@
       </v-col>
       <v-col
         cols="12"
-        xs="12"
-        sm="12"
         md="3"
-        lg="3"
         style="min-width: 100px"
         class="flex-grow-0 flex-shrink-1 pl-3"
       >

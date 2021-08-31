@@ -55,17 +55,18 @@
       </nuxt-link>
       <v-spacer />
       <Search />
-      <v-btn icon>
+      <v-btn icon class="d-none d-sm-flex">
         <v-icon>mdi-microphone</v-icon>
       </v-btn>
       <v-spacer />
-      <v-btn icon>
+      <v-btn icon class="d-none d-sm-flex">
         <v-icon>mdi-video</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon class="d-none d-sm-flex">
         <v-icon>mdi-apps</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon class="d-none d-sm-flex"
+>
         <v-icon>mdi-bell</v-icon>
       </v-btn>
 
@@ -76,28 +77,13 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-bottom-navigation
-    class="d-flex d-sm-none"
-      color="white"
-      fixed
-    >
-      <v-btn>
-        <span>Recents</span>
-
-        <v-icon>mdi-history</v-icon>
-      </v-btn>
-
-      <v-btn>
-        <span>Favorites</span>
-
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn>
-        <span>Nearby</span>
-
-        <v-icon>mdi-map-marker</v-icon>
-      </v-btn>
+    <v-bottom-navigation class="d-flex d-sm-none pt-2" color="white" fixed>
+      <div v-for="(item, i) in footer_items" :key="i">
+        <v-btn class="justify-space-between">
+          <span>{{ item.title }}</span>
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-btn>
+      </div>
     </v-bottom-navigation>
   </v-app>
 </template>
@@ -144,6 +130,29 @@ export default {
           icon: 'mdi-thumb-up-outline',
           title: 'Liked Videos',
           to: '/',
+        },
+      ],
+      footer_items: [
+        {
+          icon: 'mdi-home',
+          title: 'Home',
+          to: '/',
+        },
+        {
+          icon: 'mdi-compass-outline',
+          title: 'Trending',
+          to: '/card',
+        },
+        {
+          icon: 'mdi-youtube-subscription',
+          title: 'Subcriptions',
+          to: '/profile',
+        },
+
+        {
+          icon: 'mdi-play-box-multiple-outline',
+          title: 'Library',
+          to: '/videoView',
         },
       ],
       miniVariant: false,

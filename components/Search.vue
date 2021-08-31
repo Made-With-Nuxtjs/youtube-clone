@@ -10,9 +10,10 @@
         dense
         hide-details
         label="Search"
+        class="d-none d-sm-flex "
         solo
       ></v-autocomplete>
-      <a href="/searchDetails" class="linkStyle">
+      <a href="/searchDetails" class="linkStyle float-sm-right">
         <v-icon class="pl-2">mdi-magnify</v-icon>
       </a>
     </v-toolbar>

@@ -3,7 +3,7 @@
     <v-layout row cols="12" class="justify-center">
       <v-card v-for="n in 10" :key="n" max-width="600" class="pb-2 cardColor">
         <v-row>
-          <v-col md="5" sm="5" lg="5">
+          <v-col cols="5">
             <div>
               <v-img
                 height="94"
@@ -13,7 +13,7 @@
             </div>
           </v-col>
 
-          <v-col md="7" sm="7" lg="7" dense>
+          <v-col cols="7" dense>
             <div>
               <v-icon class="float-right pr-2 pt-1" size="16"
                 >mdi-dots-vertical</v-icon
