@@ -57,18 +57,12 @@
         <v-icon>mdi-video</v-icon>
       </v-btn>
        <v-btn icon>
-        <v-icon>mdi-dialpad</v-icon>
+        <v-icon>mdi-apps</v-icon>
       </v-btn>
       <v-btn icon>
         <v-icon>mdi-bell</v-icon>
       </v-btn>
-      <!-- <v-avatar size="36px">
-        <img
-          class="avatar"
-          src="https://randomuser.me/api/portraits/women/75.jpg"
-          alt="John"
-        />
-      </v-avatar> -->
+    
       <logger-options/>
     </v-app-bar>
     <v-main>
