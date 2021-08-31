@@ -2,7 +2,7 @@
   <v-container dark>
     <v-row no-gutters dense>
       <v-col cols="12" md="9" class="flex-grow-1 flex-shrink-0">
-        <!-- <v-responsive :aspect-ratio="18 / 9"> -->
+      
         <v-row dense>
           <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
             <v-card>
@@ -46,7 +46,7 @@
               </nuxt-link>
 
               <v-row>
-                <v-col cols="3" class="linkStyle " >
+                <v-col cols="12"  class="linkStyle" >
                   <span class="text-subtitle-2 d-inline-flex font-weight-thin">
                     1 M view</span
                   >
@@ -54,12 +54,12 @@
                     class="
                       text-subtitle-2
                       font-weight-thin
-                      d-inline-flex d-xm-none
+                     
                     "
                     >. 1 week ago</span
                   >
                 </v-col>
-                <v-col cols="9">
+                <v-col cols="12" >
                   <v-icon class="float-right pr-2 pt-1" size="16"
                     >mdi-dots-horizontal</v-icon
                   >
@@ -81,11 +81,11 @@
                   >
                 </v-col>
               </v-row>
-              <!-- <div class="float-left"> -->
+             
 
-              <!-- </div> -->
+           
               <!-- right part -->
-              <div dense tile class="float-right"></div>
+              
             </div>
 
             <v-divider class="my-2"></v-divider>
@@ -117,7 +117,7 @@
                 <div class="linkStyle">
                   <h6 class="font-weight-light d-block pl-8">1M Subcriber</h6>
                 </div>
-                <div class="pl-8 text-wrap white--text d-none d-md-flex">
+                <div class="pl-8 text-wrap white--text  ">
                   <span class="mb-4">
                     <div>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -161,7 +161,7 @@
                     COMMENTS
                   </div>
                 </div>
-                <div class="d-inline-flex white--text my-6 mx-2 d-none d-sm-flex">
+                <div class="d-inline-flex white--text my-6 mx-2 ">
                   <span class="d-inline-flex white--text">
                     <v-btn icon>
                       <v-icon>mdi-sort-variant</v-icon>
@@ -225,7 +225,7 @@
             </div>
           </v-col>
         </v-row>
-        <!-- </v-responsive> -->
+       
       </v-col>
       <v-col
         cols="12"
