@@ -8,8 +8,8 @@
       fixed
       left
       temporary
-      expand-on-hover
     >
+      <!-- expand-on-hover -->
       <div class="d-flex">
         <v-app-bar-nav-icon class="ml-3 mt-3" @click.stop="drawer = !drawer" />
         <nuxt-link to="/">
@@ -48,9 +48,16 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon ml-2 @click.stop="drawer = !drawer" />
-      <nuxt-link to="/">
+      <nuxt-link to="/" 
+      >
         <img class="logo ml-3" src="/logo.png" alt="logo" />
       </nuxt-link>
+       <v-btn
+        icon
+        @click.stop="fixed = !fixed"
+      >
+        <v-icon>mdi-minus</v-icon>
+      </v-btn>
       <nuxt-link to="/" class="linkStyle">
         <v-toolbar-title v-text="title" />
       </nuxt-link>
@@ -61,7 +68,7 @@
       </v-btn>
       <v-spacer />
       <v-btn icon>
-        <v-icon>mdi-video</v-icon>
+        <v-icon>mdi-video-plus-outline</v-icon>
       </v-btn>
        <v-btn icon>
         <v-icon>mdi-apps</v-icon>
@@ -77,13 +84,15 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    
   </v-app>
 </template>
 <script>
+
+
 export default {
+ 
+
   data() {
     return {
       clipped: false,

@@ -20,11 +20,16 @@ v-<template>
       </v-list-item-content>
     </v-list-item>
     <v-divider></v-divider>
-    <div class="caption text--disabled pl-4">
-        AboutPressCopyrightContact usCreatorsAdvertiseDevelopers
-TermsPrivacyPolicy & SafetyHow YouTube worksTest new features
+    <div class="caption text--disabled pl-4 pt-2">
+       <p> AboutPressCopyrightContact usCreatorsAdvertiseDevelopers</p>
+       <p class="pb-6"> TermsPrivacyPolicy & SafetyHow YouTube worksTest new features</p>
     </div>
+    <v-footer>
+      <span>&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
+   
   </div>
+  
 </template>
 
 <script>
