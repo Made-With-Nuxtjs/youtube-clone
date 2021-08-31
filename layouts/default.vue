@@ -29,6 +29,8 @@
           :to="item.to"
           router
           exact
+          dense tile
+
         >
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -37,6 +39,11 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
+       
+        <nav-subcriptions/>
+        <nav-more-from-youtube/>
+        <nav-setting-related/>
+
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
@@ -89,30 +96,38 @@ export default {
           to: '/',
         },
         {
-          icon: 'mdi-home',
+          icon: 'mdi-compass-outline',
           title: 'Explore',
-          to: '/inspire',
+          to: '/card',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-youtube-subscription',
           title: 'Subcriptions',
-          to: '/inspire',
+          to: '/profile',
         },
+      
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-play-box-multiple-outline',
           title: 'Library',
-          to: '/inspire',
+          to: '/videoView',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-history',
           title: 'History',
           to: '/inspire',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Search',
-          to: '/searchDetails',
+          icon: 'mdi-clock-outline',
+          title: 'Watch later',
+          to: '/',
         },
+        {
+          icon: 'mdi-thumb-up-outline',
+          title: 'Liked Videos',
+          to: '/',
+        },
+        
+        
        
       ],
       miniVariant: false,
