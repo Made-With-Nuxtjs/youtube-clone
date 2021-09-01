@@ -1,19 +1,19 @@
 <template>
   <v-container dense>
-    <v-layout row cols="12" class="justify-center">
+    <v-layout row  class="justify-center">
       <v-card v-for="n in 10" :key="n" max-width="600" class="pb-2 cardColor">
         <v-row>
-          <v-col cols="5">
-            <div>
+          <v-col xs="12" md="5" sm="5">
+            <div class="fill-height">
               <v-img
-                height="94"
-                width="168"
+                max-height="200"
+                max-width="330"
                 src="https://cdn.pixabay.com/photo/2020/07/12/07/47/bee-5396362_1280.jpg"
               ></v-img>
             </div>
           </v-col>
 
-          <v-col cols="7" dense>
+          <v-col xs="12" sm="7" md="7" dense>
             <div>
               <v-icon class="float-right pr-2 pt-1" size="16"
                 >mdi-dots-vertical</v-icon
