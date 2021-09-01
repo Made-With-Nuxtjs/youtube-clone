@@ -3,7 +3,7 @@
     <v-row no-gutters tile>
       <v-col cols="12" md="9">
         <!-- visible sx/...only //down card-->
-        <v-card class="sticky-card hidden-sm-and-up">
+        <v-card class="sticky-card hidden-sm-and-up ">
           <v-img
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             class="white--text align-end pa-0"
