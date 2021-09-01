@@ -1,9 +1,9 @@
 <template>
   <v-container dense>
-    <v-layout row  class="justify-center">
+    <!-- <v-layout row  class="justify-center"> -->
       <v-card v-for="n in 10" :key="n" max-width="600" class="pb-2 cardColor">
         <v-row>
-          <v-col xs="12" md="5" sm="5">
+          <v-col cols="12" sm="5">
             <div class="fill-height">
               <v-img
                 max-height="200"
@@ -13,7 +13,7 @@
             </div>
           </v-col>
 
-          <v-col xs="12" sm="7" md="7" dense>
+          <v-col cols="12" sm="7"  dense>
             <div>
               <v-icon class="float-right pr-2 pt-1" size="16"
                 >mdi-dots-vertical</v-icon
@@ -57,7 +57,7 @@
           </v-col>
         </v-row>
       </v-card>
-    </v-layout>
+    <!-- </v-layout> -->
   </v-container>
 </template>
 
