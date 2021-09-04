@@ -54,23 +54,17 @@
         <v-toolbar-title v-text="title" />
       </nuxt-link>
       <v-spacer />
-      <Search class="pl-sm-10"/>
+      <Search class="pl-sm-10 d-none d-sm-flex" />
+      <SearchMobile class="d-flex d-sm-none"/> 
       <v-btn icon class="d-none d-sm-flex">
         <v-icon>mdi-microphone</v-icon>
       </v-btn>
       <v-spacer />
-      <!-- <v-btn icon class="d-none d-sm-flex">
-        <v-icon>mdi-video-plus-outline</v-icon>
-      </v-btn> -->
-      <create-video/>
-      <!-- <v-btn icon class="d-none d-sm-flex">
-        <v-icon>mdi-apps</v-icon>
-      </v-btn> -->
-      <youtube-apps/>
-     
-      <notifivation-bell class="pa-1"/>
-
-      <logger-options />
+    <!-- components -->
+      <CreateVideo />
+      <YoutubeApps />
+      <NotificationBell class="pa-1" />
+      <LoggerOptions />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -88,9 +82,8 @@
   </v-app>
 </template>
 <script>
-import NotifivationBell from '~/components/NotifivationBell.vue'
+
 export default {
-  components: { NotifivationBell },
   data() {
     return {
       clipped: false,
@@ -187,5 +180,4 @@ img.logo {
   text-decoration: none;
   color: white;
 }
-
 </style>
