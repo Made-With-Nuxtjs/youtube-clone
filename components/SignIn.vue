@@ -24,9 +24,9 @@
         </div>
         <v-divider></v-divider>
         <v-card-text class="">
-          <div class="text--disabled py-10" align="center">
-            <v-card ref="form">
-              <v-card-text>
+          <div class="text--disabled" align="center">
+            <v-card ref="form" dense flat>
+              <v-card-text class="pa-0 ma-0">
                 <v-text-field
                   ref="name"
                   v-model="name"
