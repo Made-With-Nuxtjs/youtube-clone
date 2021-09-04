@@ -63,7 +63,8 @@
     <!-- components -->
       <CreateVideo />
       <YoutubeApps />
-      <NotificationBell class="pa-1" />
+      <NotificationBell/>
+      <SignIn/>
       <LoggerOptions />
     </v-app-bar>
     <v-main>
