@@ -1,6 +1,6 @@
 <template>
-  <v-container style="width: 37% ; " >
-    <v-toolbar dense flat>
+  <v-container style="width: 37%;">
+    <v-toolbar dense flat >
       <v-autocomplete
         :loading="loading"
         :items="items"
@@ -10,11 +10,11 @@
         dense
         hide-details
         label="Search"
-        class="d-none d-sm-flex "
+        class="d-none d-sm-flex"
         solo
       ></v-autocomplete>
-      <a href="/searchDetails" class="linkStyle float-sm-right">
-        <v-icon class="pl-2">mdi-magnify</v-icon>
+      <a href="/searchDetails" class="linkStyle">
+        <v-icon class="pl-2" >mdi-magnify</v-icon>
       </a>
     </v-toolbar>
   </v-container>
@@ -117,6 +117,8 @@ export default {
   text-decoration: none;
   /* color: white; */
 }
-
+.mdi-magnify::before{
+    margin-left: 60px;
+}
 
 </style>
