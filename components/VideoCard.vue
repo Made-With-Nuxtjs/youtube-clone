@@ -25,7 +25,7 @@
                           v-bind="attrs"
                           v-on="on"
                         >
-                          <v-icon>mdi-clock</v-icon>
+                          <v-icon>mdi-clock-outline</v-icon>
                         </v-btn>
                       </template>
                       <span>WATCH LATER</span>
@@ -56,9 +56,10 @@
                 </v-col>
                 <v-col cols="10" class="ma-0 pa-0 mt-3 mb-3">
                   <div class="pl-2">
-                    <v-icon class="float-right font-weight-thin pt-2 pr-2"
-                      >mdi-dots-vertical</v-icon
-                    >
+                    <div class="text-center">
+                      <!-- use-Componets -->
+                      <DotsMenu />
+                    </div>
                     <nuxt-link
                       to="/videoView"
                       style="text-decoration: none; color: inherit"
@@ -72,7 +73,7 @@
                       class="#928E92--text"
                       style="text-decoration: none; color: inherit"
                     >
-                      <span class="text-subtitle-2  text-caption d-sm-flex"
+                      <span class="text-subtitle-2 text-caption d-sm-flex"
                         >The Net Ninja
                         <v-icon size="10">mdi-check-circle</v-icon></span
                       >
@@ -95,6 +96,8 @@
     </v-layout>
   </v-container>
 </template>
+
+
 
   
 

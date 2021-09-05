@@ -15,6 +15,7 @@
             >
             </v-text-field>
             <!-- <v-btn text @click="dialog2 = false"> Close </v-btn> -->
+            <a href="/searchDetails" class="text-decoration-none">hello search</a>
           </v-card-text>
         </v-card>
       </v-dialog>

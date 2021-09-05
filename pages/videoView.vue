@@ -3,7 +3,7 @@
     <v-row no-gutters tile>
       <v-col cols="12" md="9">
         <!-- visible sx/...only //down card-->
-        <v-card class="sticky-card hidden-sm-and-up ">
+        <v-card class="sticky-card hidden-sm-and-up">
           <v-img
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             class="white--text align-end pa-0"
@@ -110,7 +110,33 @@
                 <v-icon class="pa-0">mdi-playlist-plus</v-icon>
                 <span class="ml-2">SAVE</span>
               </v-btn>
-              <v-icon class="pt-1">mdi-dots-horizontal</v-icon>
+              <!-- -----Dotsmenu----- -->
+              <v-menu offset-y :nudge-width="200">
+                <template #activator="{ on, attrs }">
+                  <v-icon
+                    class="float-right font-weight-thin pt-1 pl-2"
+                    v-bind="attrs"
+                    v-on="on"
+                    >mdi-dots-horizontal</v-icon
+                  >
+                </template>
+                <v-list>
+                  <a class="text-decoration-none" href="#">
+                    <v-list-item
+                      v-for="(item, index) in dots_menu"
+                      :key="index"
+                    >
+                      <v-list-item-action>
+                        <v-icon>{{ item.icon }}</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-title class="subtitle-2"
+                        >{{ item.title }}
+                      </v-list-item-title>
+                    </v-list-item>
+                  </a>
+                </v-list>
+              </v-menu>
+              <!-- -----Dotsmenu----- -->
             </div>
           </div>
         </div>
@@ -291,6 +317,12 @@ export default {
         text: 'Drafts',
       },
     ],
+    // ......Dotsmenu......//
+    dots_menu: [
+      { icon: 'mdi-flag-outline', title: 'Report' },
+      { icon: 'mdi-newspaper', title: 'Open transcript' },
+    ],
+
     show: false,
   }),
 }
