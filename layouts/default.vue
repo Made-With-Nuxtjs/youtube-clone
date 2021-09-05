@@ -39,10 +39,8 @@
             <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
-
-        <nav-subcriptions />
-        <nav-more-from-youtube />
-        <nav-setting-related />
+        <!-- components -->
+          <LeftNav/>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>

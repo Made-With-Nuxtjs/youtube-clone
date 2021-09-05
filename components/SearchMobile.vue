@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="d-flex d-sm-none">
     <v-row>
       <v-icon class="pl-2 ml-16" @click="dialog2 = true">mdi-magnify</v-icon>
       
