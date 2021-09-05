@@ -1,7 +1,6 @@
 <template>
   <div class="text-center">
     <v-menu
-      v-model="menu"
       :close-on-content-click="false"
       :nudge-width="250"
       offset-y
@@ -44,6 +43,7 @@
                   label="User Password"
                   hint="At least 8 characters"
                   class="input-group--focused"
+                   value=""
                   @click:append="show3 = !show3"
                 ></v-text-field>
               </v-card-text>
@@ -66,6 +66,11 @@
 <script>
 export default {
   data: () => ({
+    show3: false,
+    rules: {
+      required: (value) => !!value || 'Required.',
+      min: (value) => value.length >= 8 || 'Min 8 characters',
+    },
     countries: [
       'Afghanistan',
       'Albania',
@@ -274,11 +279,6 @@ export default {
       'Zambia',
       'Zimbabwe',
     ],
-    rules: {
-      required: (value) => !!value || 'Required.',
-      min: (v) => v.length >= 8 || 'Min 8 characters',
-      emailMatch: () => `The email and password you entered don't match`,
-    },
     errorMessages: '',
     name: null,
     password: null,

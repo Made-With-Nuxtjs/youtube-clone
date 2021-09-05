@@ -1,17 +1,13 @@
 
-
-
-
 <template>
   <div>
     <v-row>
       <v-icon class="pl-2 ml-16" @click="dialog2 = true">mdi-magnify</v-icon>
-
+      
       <v-dialog v-model="dialog2" max-width="700px" >
         <v-card class="d-flex align-start">
           <v-card-text >
-            <v-text-field
-            
+            <v-text-field           
               label="Search"
               clearable
               append-icon="mdi-magnify"
@@ -25,7 +21,6 @@
     </v-row>
   </div>
 </template>
-
 
 
 
