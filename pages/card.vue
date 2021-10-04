@@ -1,7 +1,7 @@
 <template>
   <v-card max-width="400" class="mx-auto">
     <v-container>
-      <v-row dense>
+      <v-row no-gutters dense>
         <v-col cols="12">
           <v-card color="#385F73" dark>
             <v-card-title class="text-h5"> Unlimited music now </v-card-title>

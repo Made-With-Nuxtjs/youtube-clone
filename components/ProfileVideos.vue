@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row no-gutters>
       <v-col md="12" sm="12">
-        <v-row>
+        <v-row no-gutters>
           <div v-for="n in 24" :key="n">
             <v-col v-for="v in 6" :key="v">
               <v-card flat class="flex-nowrap ">

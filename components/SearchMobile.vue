@@ -1,7 +1,7 @@
 
 <template>
   <div class="d-flex d-sm-none">
-    <v-row>
+    <v-row no-gutters>
       <v-icon class="pl-2 ml-16" @click="dialog2 = true">mdi-magnify</v-icon>
       
       <v-dialog v-model="dialog2" max-width="700px" >

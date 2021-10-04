@@ -1,7 +1,6 @@
 <template>
   <v-card class="mx-auto hidden-sm-and-up" max-width="400">
     <v-card-title class="white--text darken-4">
-      <!-- <v-img src="https://cdn.vuetifyjs.com/images/cards/house.jpg"></v-img> -->
       <v-img src="https://cdn.vuetifyjs.com/images/cards/house.jpg">
         <v-card-actions>
           <v-btn icon>
@@ -33,8 +32,6 @@
     <v-divider></v-divider>
 
     <v-virtual-scroll height="300">
-      <!-- <Category-chips class="d-none d-sm-flex" />
-      <Related-video /> -->
       <div>
         <div class="float-sm-left">
           Float left on viewports sized SM (small) or wider

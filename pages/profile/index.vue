@@ -3,12 +3,12 @@
     <v-row no-gutters dense>
       <v-col cols="12" md="12" sm="12" class="flex-grow-1 flex-shrink-0">
         <v-responsive :aspect-ratio="18 / 9">
-          <v-row dense>
+          <v-row dense no-gutters>
             <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
               <v-card flat>
                 <v-img :src="card.src" height="400px" />
 
-                <profile-tabs flat />
+                <ProfileTabs flat />
               </v-card>
             </v-col>
           </v-row>

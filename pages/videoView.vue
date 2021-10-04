@@ -3,7 +3,7 @@
     <v-row no-gutters tile>
       <v-col cols="12" md="9">
         <!-- visible sx/...only //down card-->
-        <v-card class="sticky-card hidden-sm-and-up">
+        <v-card class="sticky-card hidden-xs-and-up hidden-sm-and-up">
           <v-img
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             class="white--text align-end pa-0"
@@ -36,7 +36,7 @@
         </v-card>
 
         <!-- hidden sx/sm...only //down card-->
-        <v-card class="">
+        <v-card>
           <v-img
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             max-height="600px"
@@ -68,18 +68,18 @@
             </v-card-actions>
           </v-img>
         </v-card>
-        <div dense tile class="after-sticky">
-          <nuxt-link to="/videoView" class="linkStyle">
+        <div dense tile class="after-sticky pt-2">
+          <NuxtLink to="/videoView" class="text-decoration-none white--text">
             <span class="text-subtitle-2 font-weight-light"># coding </span>
 
             <div
-              class="text-wrap pb-4 linkStyle"
+              class="text-wrap pb-4 text-decoration-none white--text"
               style="font-family: Robot, Arial, sans-serif"
             >
               Suspendisse faucibus, nunc et pellentesque egestas, lacus ante
               convallis tellus.
             </div>
-          </nuxt-link>
+          </NuxtLink>
 
           <div class="d-flex justify-space-between white--text">
             <div class="d-inline-flex d-sm-flex">
@@ -95,12 +95,11 @@
                 <span>3</span>
               </v-btn>
               <v-btn class="matchColor pa-0">
-                <span class=""
-                  ><v-icon class="d-md-flex pr-1 pa-0"
+                <span><v-icon class="d-md-flex pr-1 pa-0"
                     >mdi-thumb-down-outline</v-icon
                   ></span
                 >
-                <span class="">3</span>
+                <span>3</span>
               </v-btn>
               <v-btn class="matchColor pa-0">
                 <v-icon class="pa-0">mdi-share </v-icon>
@@ -144,32 +143,32 @@
         <v-divider></v-divider>
         <div>
           <div class="justify-center pt-3">
-            <nuxt-link to="/profile" class="linkStyle">
+            <NuxtLink to="/profile" class="text-decoration-none white--text">
               <v-avatar class="float-left" size="36">
                 <v-img
                   src="https://cdn.vuetifyjs.com/images/john.png"
                   alt="Nirob"
                 ></v-img>
               </v-avatar>
-            </nuxt-link>
+            </NuxtLink>
           </div>
 
-          <nuxt-link
+          <NuxtLink
             to="/videoView"
-            class="font-weight-bold d-inline pl-3 linkStyle"
+            class="font-weight-bold d-inline pl-3 text-decoration-none white--text"
           >
-            <nuxt-link to="/profile" class="linkStyle">
+            <NuxtLink to="/profile" class="text-decoration-none white--text">
               <span>The Net Ninja </span>
-            </nuxt-link>
+            </NuxtLink>
             <v-icon size="12" class="d-inline">mdi-check-circle</v-icon>
-          </nuxt-link>
+          </NuxtLink>
           <v-btn depressed color="error" class="d-inline float-right">
             Subcribe
           </v-btn>
-          <div class="linkStyle">
-            <h6 class="font-weight-light d-block pl-8">1M Subcriber</h6>
+          <div class="text-decoration-none white--text">
+            <h6 class="font-weight-light d-block ml-12">1M Subcriber</h6>
           </div>
-          <div class="pl-8 text-wrap white--text d-none d-sm-flex">
+          <div class="px-12 text-wrap white--text d-none d-sm-flex">
             <span class="mb-4">
               <div>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -204,74 +203,7 @@
             </span>
           </div>
 
-          <v-divider></v-divider>
-          <div class="d-inline-flex d-none d-sm-inline">
-            <div
-              class="text-wrap pb-4 white--text pr-2"
-              style="font-size: 13px"
-            >
-              <span class="d-inline-flex white--text pr-2">10</span>
-              COMMENTS
-            </div>
-          </div>
-          <v-divider class="d-flex d-sm-none white--text mb-2"></v-divider>
-          <div class="d-none d-sm-flex white--text my-6 mx-2">
-            <span class="d-inline-flex white--text">
-              <v-btn icon>
-                <v-icon>mdi-sort-variant</v-icon>
-              </v-btn>
-            </span>
-            <span class="d-inline-flex white--text mt-3" style="font-size: 13px"
-              >SORT BY</span
-            >
-          </div>
-          <div class="d-none d-sm-flex">
-            <div class="d-inline justify-center">
-              <v-avatar size="36">
-                <v-img
-                  src="https://randomuser.me/api/portraits/women/75.jpg"
-                  alt="Nirob"
-                ></v-img>
-              </v-avatar>
-            </div>
-            <div class="d-inline white--text">
-              <span class="font-weight-thin pl-8"
-                >commenting publicly as Nirob (Logging User).</span
-              >
-              <v-divider inset></v-divider>
-              <h5 class="font-weight-light ml-2 pt-5 pl-16">
-                By completing this action you are creating a
-                <nuxt-link to="/">channel</nuxt-link>
-                and agree to
-                <nuxt-link to="/">Youtube's term of service</nuxt-link>.
-              </h5>
-            </div>
-          </div>
-
-          <h5 class="hidden-xs-and-up white--text mb-3">Up-Next</h5>
-
-          <div class="pt-7 d-none d-sm-flex">
-            <div class="d-inline-flex white--text">
-              <div class="d-inline justify-center">
-                <v-avatar size="36">
-                  <v-img
-                    src="https://randomuser.me/api/portraits/women/75.jpg"
-                    alt="Nirob"
-                  ></v-img>
-                </v-avatar>
-              </div>
-            </div>
-            <div class="d-inline-flex">
-              <div class="white--text">
-                <div class="d-flex white--text pl-8">
-                  <h5>hello mr</h5>
-                </div>
-                <div class="d-flex white--text pl-8">
-                  <h5>hello mr xyc</h5>
-                </div>
-              </div>
-            </div>
-          </div>
+          <VideoComments/>
         </div>
       </v-col>
 
@@ -281,8 +213,8 @@
         style="min-width: 100px"
         class="flex-grow-0 flex-shrink-1 pl-3"
       >
-        <Category-chips class="d-none d-sm-flex" />
-        <Related-video />
+        <CategoryChips class="d-none d-sm-flex" />
+        <RelatedVideo  class="mb-5"/>
       </v-col>
     </v-row>
   </v-container>
@@ -335,14 +267,10 @@ export default {
   background-color: rgba(12, 9, 9, 0.5) !important;
   border-color: white !important;
 }
-.linkStyle {
-  text-decoration: none;
-  color: white;
-}
 .sticky-card {
   /* width: 344px; */
   position: fixed;
-  top: 180px;
+  top: 195px;
   z-index: 1;
   /* centering */
   left: 50%;

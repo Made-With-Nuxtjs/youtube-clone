@@ -1,10 +1,10 @@
 <template>
-  <v-row >
+  <v-row no-gutters >
     <v-col
       cols="12"
       class="cardColor"
     >
-      <v-sheet>
+      <v-sheet flat tile dense class="my-5">
         <v-chip-group
           multiple
           active-class="primary--text"

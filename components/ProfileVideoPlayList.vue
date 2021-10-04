@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row no-gutters>
       <v-col md="12" sm="12">
-        <v-row class="fill-height" align="center" justify="center">
+        <v-row no-gutters class="fill-height" align="center" justify="center">
           <template v-for="(item, i) in items">
             <v-col :key="i" cols="12" md="2">
               <v-hover v-slot="{ hover }">
@@ -12,12 +12,7 @@
                 >
                   <v-img :src="item.img" height="200px">
                     <v-card-title class="text-h6 white--text">
-                      <v-row
-                        class="fill-height flex-column"
-                        justify="space-between"
-                      >
-                       
-
+                      <v-row no-gutters class="fill-height flex-column" justify="space-between">
                         <div>
                           <p
                             class="

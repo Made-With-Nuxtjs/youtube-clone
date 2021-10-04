@@ -4,7 +4,7 @@
       <div v-for="n in 10" :key="n">
         <v-col v-for="v in 4" :key="v">
           <v-card max-width="325" flat tile class="pa-0">
-            <nuxt-link
+            <NuxtLink
               to="/videoView"
               style="text-decoration: none; color: inherit"
             >
@@ -41,9 +41,9 @@
                   </div>
                 </v-app-bar>
               </v-img>
-            </nuxt-link>
+            </NuxtLink>
             <div>
-              <v-row>
+              <v-row no-gutters>
                 <v-col cols="2">
                   <div class="mt-3 px-2">
                     <v-avatar class="float-left pa-2" size="36">
@@ -60,15 +60,15 @@
                       <!-- use-Componets -->
                       <DotsMenu />
                     </div>
-                    <nuxt-link
+                    <NuxtLink
                       to="/videoView"
                       style="text-decoration: none; color: inherit"
                     >
                       <h4 class="mt-3">
                         Nissan GTR Vs a Woman | Top Gear Festival Sydney.
                       </h4>
-                    </nuxt-link>
-                    <nuxt-link
+                    </NuxtLink>
+                    <NuxtLink
                       to="/videoView"
                       class="#928E92--text"
                       style="text-decoration: none; color: inherit"
@@ -77,7 +77,7 @@
                         >The Net Ninja
                         <v-icon size="10">mdi-check-circle</v-icon></span
                       >
-                    </nuxt-link>
+                    </NuxtLink>
                     <div class="d-inline-flex">
                       <span class="text-subtitle-2 d-inline text-caption">
                         1 M view</span

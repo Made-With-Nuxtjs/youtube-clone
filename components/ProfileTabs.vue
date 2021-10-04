@@ -17,7 +17,7 @@
                 <h3 class="align-center">The Net Ninja</h3>
               </div>
 
-              <div class="linkStyle">
+              <div class="text-decoration-none white--text">
                 <h6 class="font-weight-light d-block">1M Subcriber</h6>
               </div>
             </div>
@@ -33,25 +33,27 @@
             <v-tab class="pr-10 text-uppercase">CHANNEL</v-tab>
             <v-tab class="pr-10 text-uppercase">About</v-tab>
             <div class="mt-2">
+             <NuxtLink to="/searchDetails" class="text-decoration-none">
               <v-icon class="d-inline" size="20">mdi-magnify</v-icon>
+             </NuxtLink>
             </div>
             <v-tab-item>
-              <profile-home />
+              <ProfileHome />
             </v-tab-item>
             <v-tab-item>
-              <profile-videos />
+              <ProfileVideos />
             </v-tab-item>
             <v-tab-item>
-              <profile-video-play-list />
+              <ProfileVideoPlayList />
             </v-tab-item>
             <v-tab-item>
-              <profile-community />
+              <ProfileCommunity />
             </v-tab-item>
             <v-tab-item>
-              <profile-videos />
+              <ProfileVideos />
             </v-tab-item>
             <v-tab-item>
-              <profile-about />
+              <ProfileAbout />
             </v-tab-item>
           </v-tabs>
         </v-card>
@@ -64,9 +66,5 @@
   background-color: rgba(19, 17, 17, 0.959) !important;
   border-color: #131111;
   
-}
-.linkStyle {
-  text-decoration: none;
-  color: white;
 }
 </style>

@@ -8,26 +8,26 @@
           class="pa-2 mb-6"
         >
                 <div class="justify-center pt-3">
-                  <nuxt-link to="/profile" class="linkStyle">
+                  <NuxtLink to="/profile" class="text-decoration-none white--text">
                     <v-avatar class="float-left" size="36">
                       <v-img
                         src="https://cdn.vuetifyjs.com/images/john.png"
                         alt="Nirob"
                       ></v-img>
                     </v-avatar>
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
 
             <div class="text-wrap mx-4">
-                  <nuxt-link to="/videoView" class="linkStyle">
+                  <NuxtLink to="/videoView" class="text-decoration-none white--text">
                     <div class="font-weight-bold d-inline pl-3">
-                      <nuxt-link to="/profile" class="linkStyle">
+                      <NuxtLink to="/profile" class="text-decoration-none white--text">
                         <span class="caption">The Net Ninja </span>
-                      </nuxt-link>
+                      </NuxtLink>
                       <span class="d-inline caption text--disabled pa-2"
                         >3 month ago</span >
                     </div>
-                  </nuxt-link>
+                  </NuxtLink>
                   
                    <div class="pl-8 text-wrap white--text">
                     <span class="mb-4">
@@ -88,26 +88,26 @@
           class="pa-2 mb-6"
         >
                 <div class="justify-center pt-3">
-                  <nuxt-link to="/profile" class="linkStyle">
+                  <NuxtLink to="/profile" class="text-decoration-none white--text">
                     <v-avatar class="float-left" size="36">
                       <v-img
                         src="https://cdn.vuetifyjs.com/images/john.png"
                         alt="Nirob"
                       ></v-img>
                     </v-avatar>
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
 
                 <div class="text-wrap mx-4">
-                  <nuxt-link to="/videoView" class="linkStyle">
+                  <NuxtLink to="/videoView" class="text-decoration-none white--text">
                     <div class="font-weight-bold d-inline pl-3">
-                      <nuxt-link to="/profile" class="linkStyle">
+                      <NuxtLink to="/profile" class="text-decoration-none white--text">
                         <span class="caption">The Net Ninja </span>
-                      </nuxt-link>
+                      </NuxtLink>
                       <span class="d-inline caption text--disabled pa-2"
                         >3 month ago</span >
                     </div>
-                  </nuxt-link>
+                  </NuxtLink>
                   
                    <div class="pl-8 text-wrap white--text">
                     <span class="mb-4">
@@ -140,7 +140,7 @@
                     </div>
                         <div>
                             <v-card max-width="1000" class="pb-2 cardColor">
-                                <v-row>
+                                <v-row no-gutters>
                                 <v-col md="3" sm="3" lg="3">
                                     <v-img
                                         height="94"
@@ -155,7 +155,7 @@
                                         <v-icon class="float-right pr-2 pt-1" size="16"
                                             >mdi-dots-vertical</v-icon
                                         >
-                                        <nuxt-link to="/videoView" class="linkStyle">
+                                        <NuxtLink to="/videoView" class="text-decoration-none white--text">
                                             <v-tooltip bottom>
                                             <template #activator="{ on, attrs }">
                                                 <h4 style="font-weight: normal">
@@ -175,13 +175,13 @@
                                                 ante convallis tellus.</span
                                             >
                                             </v-tooltip>
-                                        </nuxt-link>
-                                    <nuxt-link to="/profile" class="linkStyle">
+                                        </NuxtLink>
+                                    <NuxtLink to="/profile" class="text-decoration-none white--text">
                                         <span class="text-subtitle-2 text-caption"
                                         >The Net Ninja
                                         <v-icon size="12">mdi-check-circle</v-icon></span
                                         >
-                                    </nuxt-link>
+                                    </NuxtLink>
                                     <div>
                                         <span class="text-subtitle-2 d-inline text-caption">
                                         1 M view</span
@@ -225,26 +225,26 @@
           class="pa-2 mb-6"
         >
                 <div class="justify-center pt-3">
-                  <nuxt-link to="/profile" class="linkStyle">
+                  <NuxtLink to="/profile" class="text-decoration-none white--text">
                     <v-avatar class="float-left" size="36">
                       <v-img
                         src="https://cdn.vuetifyjs.com/images/john.png"
                         alt="Nirob"
                       ></v-img>
                     </v-avatar>
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
 
             <div class="text-wrap mx-4">
-                  <nuxt-link to="/videoView" class="linkStyle">
+                  <NuxtLink to="/videoView" class="text-decoration-none white--text">
                     <div class="font-weight-bold d-inline pl-3">
-                      <nuxt-link to="/profile" class="linkStyle">
+                      <NuxtLink to="/profile" class="text-decoration-none white--text">
                         <span class="caption">The Net Ninja </span>
-                      </nuxt-link>
+                      </NuxtLink>
                       <span class="d-inline caption text--disabled pa-2"
                         >3 month ago</span >
                     </div>
-                  </nuxt-link>
+                  </NuxtLink>
                   
                    <div class="pl-8 text-wrap white--text">
                     <span class="mb-4">
@@ -307,26 +307,26 @@
           class="pa-2 mb-6"
         >
                 <div class="justify-center pt-3">
-                  <nuxt-link to="/profile" class="linkStyle">
+                  <NuxtLink to="/profile" class="text-decoration-none white--text">
                     <v-avatar class="float-left" size="36">
                       <v-img
                         src="https://cdn.vuetifyjs.com/images/john.png"
                         alt="Nirob"
                       ></v-img>
                     </v-avatar>
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
 
             <div class="text-wrap mx-4">
-                  <nuxt-link to="/videoView" class="linkStyle">
+                  <NuxtLink to="/videoView" class="text-decoration-none white--text">
                     <div class="font-weight-bold d-inline pl-3">
-                      <nuxt-link to="/profile" class="linkStyle">
+                      <NuxtLink to="/profile" class="text-decoration-none white--text">
                         <span class="caption">The Net Ninja </span>
-                      </nuxt-link>
+                      </NuxtLink>
                       <span class="d-inline caption text--disabled pa-2"
                         >3 month ago</span >
                     </div>
-                  </nuxt-link>
+                  </NuxtLink>
                   
                    <div class="pl-8 text-wrap white--text">
                     <span class="mb-4">
@@ -404,10 +404,6 @@ export default {
 .theme--dark.v-card{
     background-color: #121212;
     color: #FFFFFF;
-}
-.linkStyle {
-  text-decoration: none;
-  color: white;
 }
 </style>
 

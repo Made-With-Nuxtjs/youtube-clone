@@ -12,15 +12,15 @@
       <!-- expand-on-hover -->
       <div class="d-flex">
         <v-app-bar-nav-icon class="ml-3 mt-3" @click.stop="drawer = !drawer" />
-        <nuxt-link to="/">
-          <img class="logo mt-4 ml-5" src="/logo.png" alt="logo" />
-        </nuxt-link>
-        <nuxt-link to="/">
+        <NuxtLink to="/">
+         <img class="ml-3 mt-4 mr-1" width="29" height="29" src="/logo.png" alt="logo" />
+        </NuxtLink>
+        <NuxtLink to="/">
           <v-toolbar-title
             class="float-right mt-4 drawer-title"
             v-text="title"
           />
-        </nuxt-link>
+        </NuxtLink>
       </div>
       <v-list>
         <v-list-item
@@ -45,12 +45,12 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon ml-2 @click.stop="drawer = !drawer" />
-      <nuxt-link to="/">
-        <img class="logo ml-3 mr-1" src="/logo.png" alt="logo" />
-      </nuxt-link>
-      <nuxt-link to="/" class="linkStyle">
+      <NuxtLink to="/">
+        <img class="ml-3 mt-2 mr-1" width="29" height="29" src="/logo.png" alt="logo" />
+      </NuxtLink>
+      <NuxtLink to="/" class="text-decoration-none white--text">
         <v-toolbar-title v-text="title" />
-      </nuxt-link>
+      </NuxtLink>
       <v-spacer />
       <Search class="pl-sm-10 d-none d-sm-flex" />
       <SearchMobile class="d-flex d-sm-none"/> 
@@ -163,20 +163,17 @@ export default {
   margin-top: 30px;
   width: 10px;
 }
-img.logo {
+/* img.logo {
   height: 25px;
   width: 29px;
   margin-right: 2px;
   margin-top: 4px;
-}
+} */
 .theme--dark.v-application {
   color: rgb(30 29 30);
 }
 .drawer-title {
   color: white;
 }
-.linkStyle {
-  text-decoration: none;
-  color: white;
-}
+
 </style>

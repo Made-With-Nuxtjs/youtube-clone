@@ -19,7 +19,7 @@
             <v-list-item-action>
               <v-icon class="red--text" size="22">mdi-youtube-tv</v-icon>
             </v-list-item-action>
-            <v-list-item-title class="subtitle-2">YouTube TV</v-list-item-title>
+            <v-list-item-title class="subtitle-2 ml-n3">YouTube TV</v-list-item-title>
           </v-list-item>
         </a>
         <v-divider></v-divider>
@@ -28,7 +28,7 @@
             <v-list-item-action>
               <v-icon class="red--text" size="22">mdi-play-circle</v-icon>
             </v-list-item-action>
-            <v-list-item-title class="subtitle-2"
+            <v-list-item-title class="subtitle-2 ml-n3"
               >YouTube Music</v-list-item-title
             >
           </v-list-item>
@@ -38,7 +38,7 @@
             <v-list-item-action>
               <v-icon class="red--text" size="22">mdi-youtube</v-icon>
             </v-list-item-action>
-            <v-list-item-title class="subtitle-2"
+            <v-list-item-title class="subtitle-2 ml-n3"
               >YouTube Kids</v-list-item-title
             >
           </v-list-item>
@@ -49,7 +49,7 @@
             <v-list-item-action>
               <v-icon class="red--text" size="22">mdi-youtube</v-icon>
             </v-list-item-action>
-            <v-list-item-title class="subtitle-2"
+            <v-list-item-title class="subtitle-2 ml-n3"
               >Creator Academy</v-list-item-title
             >
           </v-list-item>
@@ -59,7 +59,7 @@
             <v-list-item-action>
               <v-icon class="red--text" size="22">mdi-youtube</v-icon>
             </v-list-item-action>
-            <v-list-item-title class="subtitle-2"
+            <v-list-item-title class="subtitle-2 ml-n3"
               >YouTube for Artists</v-list-item-title
             >
           </v-list-item>

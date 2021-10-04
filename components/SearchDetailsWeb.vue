@@ -1,6 +1,6 @@
 <template>
   <v-container class="white--text">
-    <v-row>
+    <v-row no-gutters>
       <v-col md="8" offset-md="2" dense>
         <v-expansion-panels class="matchColor">
           <v-expansion-panel flat tile>
@@ -13,7 +13,7 @@
               </div>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-              <v-row class="my-2">
+              <v-row no-gutters class="my-2">
                 <v-col>
                   <h5 class="text-caption">UPLOAD DATE</h5>
                   <hr />
@@ -80,7 +80,7 @@
         <v-divider class="ma-2"></v-divider>
 
         <div v-for="i in 5" :key="i">
-          <v-row class="mt-2">
+          <v-row no-gutters class="mt-2">
             <v-col cols="4">
               <div>
                 <v-img
@@ -91,11 +91,11 @@
             </v-col>
 
             <v-col cols="8" dense>
-              <div>
-                <v-icon class="float-right pr-2 pt-1" size="16"
+              <div class="mx-5">
+                <v-icon class="float-right pt-1" size="16"
                 >mdi-dots-vertical</v-icon
               >
-                <nuxt-link to="/videoView" class="linkStyle">
+                <NuxtLink to="/videoView" class="linkStyle">
                   <v-tooltip bottom>
                     <template #activator="{ on, attrs }">
                       <h4 style="font-weight: normal">
@@ -110,8 +110,8 @@
                       ante convallis tellus.</span
                     >
                   </v-tooltip>
-                </nuxt-link>
-                <nuxt-link to="/profile" class="linkStyle">
+                </NuxtLink>
+                <NuxtLink to="/profile" class="linkStyle">
                   <div class="text--disabled">
                     <span class="d-inline text-caption">
                       1 M view</span
@@ -140,7 +140,7 @@
                   >
                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio voluptates nisi illum amet accusantium eligendi deserunt blanditiis, numquam eos?</h5>
                   </span>
-                </nuxt-link>
+                </NuxtLink>
               </div>
             </v-col>
           </v-row>

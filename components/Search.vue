@@ -16,12 +16,6 @@
       <a href="/searchDetails" class="linkStyle float-sm-right">
         <v-icon class="pl-2 float-sm-right" >mdi-magnify</v-icon>
       </a>
-
-
-
-
-
-
     </v-toolbar>
   </v-container>
 </template>

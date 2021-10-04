@@ -2,7 +2,7 @@
   <v-container dense>
     <!-- <v-layout row  class="justify-center"> -->
     <v-card v-for="n in 10" :key="n" max-width="600" class="pb-2 cardColor">
-      <v-row>
+      <v-row no-gutters>
         <v-col cols="12" sm="5">
           <div class="fill-height">
             <v-img
@@ -14,13 +14,13 @@
         </v-col>
 
         <v-col cols="12" sm="7" dense>
-          <div>
+          <div class="ml-3">
             <div class="text-right">
               <!-- use-Componets -->
               <DotsMenu />
             </div>
 
-            <nuxt-link to="/videoView" class="linkStyle">
+            <NuxtLink to="/videoView" class="linkStyle">
               <v-tooltip bottom>
                 <template #activator="{ on, attrs }">
                   <h4 style="font-weight: normal">
@@ -40,12 +40,12 @@
                   ante convallis tellus.</span
                 >
               </v-tooltip>
-            </nuxt-link>
-            <nuxt-link to="/profile" class="linkStyle">
+            </NuxtLink>
+            <NuxtLink to="/profile" class="linkStyle">
               <span class="text-subtitle-2 text-caption"
                 >The Net Ninja <v-icon size="12">mdi-check-circle</v-icon></span
               >
-            </nuxt-link>
+            </NuxtLink>
             <div>
               <span class="text-subtitle-2 d-inline text-caption">
                 1 M view</span

@@ -27,21 +27,16 @@
                 alt="John"
               />
             </v-list-item-avatar>
-
             <v-list-item-content>
-              <v-list-item-title class="overline"
-                >Nirob Abhee</v-list-item-title
-              >
+              <v-list-item-title class="overline">Nirob Abhee</v-list-item-title>
               <v-list-item-subtitle>nirob@and.com.bd</v-list-item-subtitle>
-
-              <nuxt-link to="#" class="text-decoration-none py-2"
-                ><h5>Manage your Google Account</h5></nuxt-link
-              >
+              <NuxtLink to="#" class="text-decoration-none py-2">
+                <h5>Manage your Google Account</h5>
+                </NuxtLink>
             </v-list-item-content>
           </v-list-item>
           <v-divider></v-divider>
         </v-list>
-
         <v-list>
           <a class="text-decoration-none" href="#">
             <v-list-item>

@@ -65,13 +65,13 @@
             <v-col md="4" sm="4">
               <v-card class="pa-2" flat tile>
                 <div class="font-weight-bold d-inline">
-                  <nuxt-link to="/profile" class="linkStyle">
+                  <NuxtLink to="/profile" class="text-decoration-none white--text">
                     <h4 class="text-wrap pl-4">
                       How To Create a Successfully APP & Quit My Job.
                     </h4>
-                  </nuxt-link>
+                  </NuxtLink>
                 </div>
-                <div class="linkStyle">
+                <div class="text-decoration-none white--text">
                   <h6 class="font-weight-light d-block pl-4 pa-2">
                     4,574 views . 5 months ago
                   </h6>
@@ -85,20 +85,20 @@
                     </p>
                     
                   </span>
-                   <nuxt-link to="/videoView" class="linkStyle">
+                   <NuxtLink to="/videoView" class="text-decoration-none white--text">
                   <div text @click="show = !show">
                     <v-btn text class="pa-0">
                       <span>{{ show ? 'READ LESS' : 'READ MORE' }}</span>
                     </v-btn>
                   </div>
-                   </nuxt-link>
+                   </NuxtLink>
                 </div>
               </v-card>
             </v-col>
           </v-row>
           <v-divider></v-divider>
 
-          <v-row class="fill-height">
+          <v-row no-gutters class="fill-height">
             <div class="pa-4">
               <div class="d-inline">Uploads</div>
               <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
@@ -130,7 +130,7 @@
             </v-sheet>
           </v-row>
 
-          <v-row class="fill-height">
+          <v-row no-gutters class="fill-height">
             <div class="pa-4">
               <div class="d-inline">APPS IN 30 MINUTES!</div>
               <v-icon class="d-inline pa-2" size="20">mdi-play</v-icon>
@@ -181,8 +181,5 @@ export default {
   background-color:#131111;
   border-color: white !important;
 }
-.linkStyle {
-  text-decoration: none;
-  color: white;
-}
+
 </style>

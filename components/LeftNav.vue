@@ -148,10 +148,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.linkStyle {
-  text-decoration: none;
-  color: white;
-}
-</style>
