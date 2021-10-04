@@ -52,7 +52,7 @@
               <div class="d-inline justify-center">
                 <v-avatar size="36">
                   <v-img
-                  src="https://cdn.vuetifyjs.com/images/john.jpg"
+                    src="https://cdn.vuetifyjs.com/images/john.jpg"
                     alt="Nirob"
                   ></v-img>
                 </v-avatar>
